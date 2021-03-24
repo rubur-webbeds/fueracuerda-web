@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import SectoresList from './SectoresList';
-import SearchBar from './SearchBar';
+import SectoresList from "./SectoresList";
+import SearchBar from "./SearchBar";
 export default {
   name: "Content",
-  components:{
-      SectoresList,
-      SearchBar,
+  components: {
+    SectoresList,
+    SearchBar,
   },
   data: () => ({
     //
