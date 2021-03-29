@@ -1,6 +1,11 @@
 <template>
   <v-container>
-    <SearchBar />
+    <v-row justify="center">
+      <SearchBar />
+      <v-btn class="mx-2" fab dark color="indigo">
+        <v-icon dark> mdi-plus </v-icon>
+      </v-btn>
+    </v-row>
     <SectoresList />
   </v-container>
 </template>
