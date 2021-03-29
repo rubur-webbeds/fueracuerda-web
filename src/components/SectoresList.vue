@@ -1,20 +1,21 @@
 <template>
   <v-container>
-    <list v-for() bkabl>
-        <Sector />
+    <list v-for="sector in sectores" :key="sector.id">
+        <SectorCard :nombre="sector.nombre" />
     </list>
   </v-container>
 </template>
 
 <script>
-import Sector from './Sector';
+import sectores from '../assets/data/sectores.json';
+import SectorCard from './SectorCard';
 export default {
   name: "SectoresList",
   components: {
-      Sector,
+      SectorCard,
   },
   data: () => ({
-    //
+    sectores,
   }),
 };
 </script>
