@@ -1,85 +1,160 @@
 [
     {
-        "id": 0,
-        "nombre": "S'estret",
-        "descripcion": "descripcion",
-        "acceso_parking": "acceso",
-        "zona": "Valldemossa",
-        "coordenadas_sector": {
-            "lat": 0.0,
-            "lon": 0.0
+        "nom": "sector blabla",
+        "descripcio": "descripcipon guay",
+        "detall": "escalada",
+        "tipus": "desportes",
+        "identificador": "01",
+        "preu": {
+            "import": "",
+            "coment-preu": ""
         },
-        "coordenadas_parking": {
-            "lat": 0.0,
-            "lon": 0.0
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
         },
-        "vias": [
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            "",
+            ""
+        ],
+        "videos": [
             {
-                "id": 0,
-                "nombre": "Con el culo al aire",
-                "grado": "5b",
-                "descripcion": "descripcion"
+                "tipus": "",
+                "url": ""
             },
             {
-                "id": 1,
-                "nombre": "Busibus",
-                "grado": "6c+",
-                "descripcion": "descripcion"
+                "tipus": "",
+                "url": ""
             }
         ],
-        "comentarios": [
-            {}
-        ],
-        "fotos":[
+        "audio": [
             {
-                "source": "source",
-                "alt": "alternative"
+                "tipus": "",
+                "url": ""
             }
         ],
-        "votaciones": [
-            {}
-        ]
-    },
-    {
-        "id": 1,
-        "nombre": "To pa ti",
-        "descripcion": "descripcion",
-        "acceso_parking": "acceso",
-        "zona": "Puig de Garrafa",
-        "coordenadas_sector": {
-            "lat": 0.0,
-            "lon": 0.0
+        "geoposicionament1": {
+            "address": "",
+            "lat": 0,
+            "long": 0,
+            "city": "valldemossa",
+            "country": "spain",
+            "zip": ""
         },
-        "coordenadas_parking": {
-            "lat": 0.0,
-            "lon": 0.0
+        "geoposicionament2": {
+            "address": "",
+            "lat": 0,
+            "long": 0,
+            "city": "valldemossa",
+            "country": "spain",
+            "zip": ""
         },
-        "vias": [
-            {
-                "id": 0,
-                "nombre": "To pa ti",
-                "grado": "7a",
-                "descripcion": "descripcion"
-            },
-            {
-                "id": 1,
-                "nombre": "Es mirall",
-                "grado": "8a",
-                "descripcion": "descripcion"
-            }
-        ],
-        "comentarios": [
-            {}
-        ],
-        "fotos":[
-            {
-                "source": "source",
-                "alt": "alternative"
-            }
-        ],
-        "votaciones": [
-            {}
-        ]
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Con el culo al aire",
+                    "grado": "5b",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 1,
+                    "nombre": "Busibus",
+                    "grado": "6c+",
+                    "descripcion": "descripcion"
+                }
+            ],
+            "acceso_parking": "aparca en mitad de la calle"
+        }
     }
 ]
-

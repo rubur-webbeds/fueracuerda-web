@@ -2,7 +2,7 @@
   <v-footer dark padless>
     <v-card class="flex" flat tile>
       <v-card-title class="blue">
-        <strong class="subheading">Frase motivadora :)</strong>
+        <strong class="subheading">Work smart not hard :)</strong>
 
         <v-spacer></v-spacer>
       </v-card-title>

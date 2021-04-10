@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <h1>Sector {{ this.sector.nombre }}</h1>
+    <h1>Sector {{ this.sector.nom }}</h1>
     <v-row id="intro" class="my-8">
       <h2>Descripción</h2>
-      <p>{{ this.sector.descripcion }}</p>
+      <p>{{ this.sector.descripcio }}</p>
       <h2>Acceso al sector</h2>
-      <p>{{ this.sector.acceso_parking }}</p>
+      <p>{{ this.sector.dadesPropies.acceso_parking }}</p>
     </v-row>
     <v-row id="info">
       <v-col id="vias">
@@ -48,9 +48,9 @@ export default {
   }),
   created() {
     var id = this.$route.params.id;
-    this.sector = sectores.filter((sector) => sector.id == id)[0];
+    this.sector = sectores.filter((sector) => sector.identificador == id)[0];
 
-    this.vias = this.sector.vias;
+    this.vias = this.sector.dadesPropies.vias;
 
     Object.keys(this.vias[0]).forEach((el) => {
       var header = { text: el, value: el };
