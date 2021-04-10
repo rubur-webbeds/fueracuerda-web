@@ -26,8 +26,8 @@
             ""
         ],
         "imatges": [
-            "",
-            ""
+            {"src":"media/img/CARRUSEL_1.png"},
+            {"src":"media/img/CARRUSEL_2.jpg"}
         ],
         "videos": [
             {

@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-list v-for="sector in sectores" :key="sector.identificador">
-      <SectorCard :id="sector.identificador" />
+      <SectorCard :id="sector.identificador" :nombre="sector.nom" />
     </v-list>
   </v-container>
 </template>

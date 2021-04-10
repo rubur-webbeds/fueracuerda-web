@@ -18,21 +18,20 @@
     <div id="carousel">
       <v-carousel v-model="model">
         <v-carousel-item
-          v-for="(foto, i) in fotos_header"
-          :key="i"
-          :src="foto"
-        />
+          v-for="(foto, i) in fotos_header" :key="i" :src="foto.src">
+        </v-carousel-item>
       </v-carousel>
     </div>
   </div>
 </template>
 
 <script>
+import fotos_header from "../assets/data/fotos_header.json";
 export default {
   name: "Header",
   data: () => ({
     model: 0,
-    fotos_header: ["img/foto01.jpg", "img/foto02.jpg"],
+    fotos_header,
   }),
 };
 </script>
