@@ -3,6 +3,7 @@
     <v-card class="mx-auto" max-width="344">
       <v-card-text>
         <p class="display-1 text--primary">{{ nombre }}</p>
+        <p>{{ descripcion }}</p>
       </v-card-text>
       <v-card-actions>
         <v-btn text color="deep-purple accent-4" :to="`/sector/${id}`"
@@ -16,7 +17,7 @@
 <script>
 export default {
   name: "SectorCard",
-  props: ["nombre", "id"],
+  props: ["nombre", "id", "descripcion"],
   data: () => ({
     //
   }),

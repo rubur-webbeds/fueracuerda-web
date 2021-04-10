@@ -1,13 +1,15 @@
 <template>
   <v-container>
     <h1>Sector {{ this.sector.nom }}</h1>
-    <v-row id="intro" class="my-8">
+    <div id="descripcion" class="my-8">
       <h2>Descripción</h2>
       <p>{{ this.sector.descripcio }}</p>
+    </div>
+    <div id="acceso_parking">
       <h2>Acceso al sector</h2>
       <p>{{ this.sector.dadesPropies.acceso_parking }}</p>
-    </v-row>
-    <v-row id="info">
+    </div>
+    <v-row id="info" class="mt-10">
       <v-col id="vias">
         <v-data-table
           :headers="this.headers"
