@@ -9,78 +9,71 @@
       <h2>Acceso al sector</h2>
       <p>{{ this.sector.dadesPropies.acceso_parking }}</p>
     </div>
-    <v-row id="info" class="mt-10">
-      <v-col id="vias">
-        <v-data-table
-          :headers="this.headers"
-          :items="this.vias"
-          class="elevation-1"
-        ></v-data-table>
-      </v-col>
-      <v-col id="mapas">
-        <div class="map border">
-          <!--MAPA SECTOR-->
-          <div>
-            <vl-map :load-tiles-while-animating="true" :load-tiles-while-interacting="true"
-              data-projection="EPSG:4326" style="height: 398px">
-              <vl-view :zoom.sync="zoom_sector" :center.sync="center_sector" :rotation.sync="rotation"></vl-view>
+    <v-row id="vias" >
+      <v-data-table
+        :headers="this.headers"
+        :items="this.vias"
+        class="my-10 elevation-1"
+      ></v-data-table>
+    </v-row>
+    <v-row id="mapas">
+      <div class="map border my-5">
+        <!--MAPA SECTOR-->
+        <div>
+          <vl-map
+            :load-tiles-while-animating="true"
+            :load-tiles-while-interacting="true"
+            data-projection="EPSG:4326"
+            style="height: 398px"
+          >
+            <vl-view
+              :zoom.sync="zoom"
+              :center.sync="this.center"
+              :rotation.sync="rotation"
+            ></vl-view>
 
-              <!-- PARA GEOLOCALIZAR USER
-              <vl-geoloc @update:position="geolocPosition = $event">
-                <template slot-scope="geoloc">
-                  <vl-feature v-if="geoloc.position" id="position-feature">
-                    <vl-geom-point :coordinates="geoloc.position"></vl-geom-point>
-                    <vl-style-box>
-                      <vl-style-icon src="_media/marker.png" :scale="0.4" :anchor="[0.5, 1]"></vl-style-icon>
-                    </vl-style-box>
-                  </vl-feature>
-                </template>
-              </vl-geoloc> -->
+            <vl-layer-tile id="osm">
+              <vl-source-osm></vl-source-osm>
+            </vl-layer-tile>
 
-              <vl-layer-tile id="osm">
-                <vl-source-osm></vl-source-osm>
-              </vl-layer-tile>
-            </vl-map>
-            <!-- <div style="padding: 20px">
+            <vl-layer-vector>
+              <vl-feature>
+                <vl-geom-point
+                  :coordinates="this.center_sector"
+                ></vl-geom-point>
+
+                <vl-style-box>
+                  <vl-style-circle :radius="5">
+                    <vl-style-fill color="red"></vl-style-fill>
+                    <vl-style-stroke color="black"></vl-style-stroke>
+                  </vl-style-circle>
+                </vl-style-box>
+              </vl-feature>
+            </vl-layer-vector>
+
+            <vl-layer-vector>
+              <vl-feature>
+                <vl-geom-point
+                  :coordinates="this.center_parking"
+                ></vl-geom-point>
+
+                <vl-style-box>
+                  <vl-style-circle :radius="5">
+                    <vl-style-fill color="blue"></vl-style-fill>
+                    <vl-style-stroke color="black"></vl-style-stroke>
+                  </vl-style-circle>
+                </vl-style-box>
+              </vl-feature>
+            </vl-layer-vector>
+          </vl-map>
+          <!-- <div style="padding: 20px">
               Zoom: {{ zoom }}<br>
               Center: {{ center }}<br>
               Rotation: {{ rotation }}<br>
               My geolocation: {{ geolocPosition }}
             </div> -->
-          </div>
         </div>
-        <div class="map border mt-5">
-          <!--MAPA PARKING-->
-          <div>
-            <vl-map :load-tiles-while-animating="true" :load-tiles-while-interacting="true"
-              data-projection="EPSG:4326" style="height: 398px">
-              <vl-view :zoom.sync="zoom_parking" :center.sync="center_parking" :rotation.sync="rotation"></vl-view>
-
-              <!-- PARA LOCALIZAR USUARIO
-                <vl-geoloc @update:position="geolocPosition = $event">
-                <template slot-scope="geoloc">
-                  <vl-feature v-if="geoloc.position" id="position-feature">
-                    <vl-geom-point :coordinates="geoloc.position"></vl-geom-point>
-                    <vl-style-box>
-                      <vl-style-icon src="_media/marker.png" :scale="0.4" :anchor="[0.5, 1]"></vl-style-icon>
-                    </vl-style-box>
-                  </vl-feature>
-                </template>
-              </vl-geoloc> -->
-
-              <vl-layer-tile id="osm">
-                <vl-source-osm></vl-source-osm>
-              </vl-layer-tile>
-            </vl-map>
-            <!-- <div style="padding: 20px">
-              Zoom: {{ zoom }}<br>
-              Center: {{ center }}<br>
-              Rotation: {{ rotation }}<br>
-              My geolocation: {{ geolocPosition }}
-            </div> -->
-          </div>
-        </div>
-      </v-col>
+      </div>
     </v-row>
     <v-row id="misc">
       <div class="comments border my-5">
@@ -104,12 +97,12 @@ export default {
     sector: null,
     vias: [],
     headers: [],
-    zoom_sector: 16,
-    zoom_parking: 16,
-    center_sector: [0,0],
-    center_parking: [0,0],
+    zoom: 16,
+    center: [0,0],
+    center_sector: [0, 0],
+    center_parking: [0, 0],
     rotation: 0,
-    geolocPosition: undefined
+    geolocPosition: undefined,
   }),
   created() {
     var id = this.$route.params.id;
@@ -117,11 +110,22 @@ export default {
 
     this.vias = this.sector.dadesPropies.vias;
 
-    this.center_sector = [this.sector.geoposicionament1.long,this.sector.geoposicionament1.lat];
-    this.center_parking = [this.sector.geoposicionament2.long,this.sector.geoposicionament2.lat];
+    this.center = [
+      this.sector.geoposicionament1.long,
+      this.sector.geoposicionament1.lat,
+    ];
+
+    this.center_sector = [
+      this.sector.geoposicionament1.long,
+      this.sector.geoposicionament1.lat,
+    ];
+    this.center_parking = [
+      this.sector.geoposicionament2.long,
+      this.sector.geoposicionament2.lat,
+    ];
 
     Object.keys(this.vias[0]).forEach((el) => {
-      var header = { text: el, value: el };
+      var header = { text: el, value: el};
       this.headers.push(header);
     });
   },
@@ -130,6 +134,7 @@ export default {
 
 <style scoped>
 .map {
+  justify-content: center;
   width: 450px;
   height: 400px;
 }
