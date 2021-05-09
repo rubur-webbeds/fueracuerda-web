@@ -47,7 +47,7 @@
             "lat": 0,
             "long": 0,
             "city": "valldemossa",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
@@ -55,7 +55,7 @@
             "lat": 0,
             "long": 0,
             "city": "valldemossa",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "horari": {
@@ -137,6 +137,7 @@
             "endTimeEvent": ""
         },
         "dadesPropies": {
+            "grado_medio": 0,
             "acceso_parking": "Hay un parking al lado del sector",
             "vias": [
                 {
@@ -163,7 +164,13 @@
                     "grado": "5+",
                     "descripcion": "descripcion"
                 }
-            ]
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 15,
+                "cubierto": true,
+                "filtra": false,
+                "afluencia": 2
+            }
         }
     },
     {
@@ -214,7 +221,7 @@
             "lat": 0,
             "long": 0,
             "city": "andratx",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
@@ -222,7 +229,7 @@
             "lat": 0,
             "long": 0,
             "city": "andratx",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "horari": {
@@ -304,6 +311,7 @@
             "endTimeEvent": ""
         },
         "dadesPropies": {
+            "grado_medio":0,
             "acceso_parking": "Aparca al lado de la depuradora de agua",
             "vias": [
                 {
@@ -324,7 +332,13 @@
                     "grado": "?",
                     "descripcion": "descripcion"
                 }
-            ]
+            ],
+            "miscelanea": {
+                "tiempo_caminando": "",
+                "cubierto":"",
+                "filtra": "",
+                "afluencia":""
+            }
         }
     },
     {
@@ -375,7 +389,7 @@
             "lat": 0,
             "long": 0,
             "city": "caimari",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
@@ -383,7 +397,7 @@
             "lat": 0,
             "long": 0,
             "city": "caimari",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "horari": {
@@ -465,6 +479,7 @@
             "endTimeEvent": ""
         },
         "dadesPropies": {
+            "grado_medio": 0,
             "acceso_parking": "Aparca en la orilla de la carretera",
             "vias": [
                 {
@@ -485,7 +500,13 @@
                     "grado": "7b",
                     "descripcion": "descripcion"
                 }
-            ]
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 14,
+                "cubierto":true,
+                "filtra": false,
+                "afluencia": 2
+            }
         }
     },
     {
@@ -536,7 +557,7 @@
             "lat": 0,
             "long": 0,
             "city": "puigpunyent",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
@@ -544,7 +565,7 @@
             "lat": 0,
             "long": 0,
             "city": "puigpunyent",
-            "country": "spain",
+            "Country": "spain",
             "zip": ""
         },
         "horari": {
@@ -626,6 +647,7 @@
             "endTimeEvent": ""
         },
         "dadesPropies": {
+            "grado_medio": 1,
             "acceso_parking": "Aparca en la orilla de la carretera",
             "vias": [
                 {
@@ -658,7 +680,13 @@
                     "grado": "7a",
                     "descripcion": "descripcion"
                 }
-            ]
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 14,
+                "cubierto":true,
+                "filtra": false,
+                "afluencia": 2
+            }
         }
     }
 ]
