@@ -6,7 +6,7 @@
         <p>{{ descripcion }}</p>
       </v-card-text>
       <v-card-actions>
-        <v-btn text color="deep-purple accent-4" :to="`/sector/${id}`"
+        <v-btn text color="deep-purple accent-4" :to="url"
           >Detalles</v-btn
         >
       </v-card-actions>
@@ -17,7 +17,7 @@
 <script>
 export default {
   name: "SectorCard",
-  props: ["nombre", "id", "descripcion"],
+  props: ["nombre", "descripcion", "url"],
   data: () => ({
     //
   }),
