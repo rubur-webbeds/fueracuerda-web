@@ -44,16 +44,16 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.7115,
+            "long": 2.6226,
             "city": "valldemossa",
             "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.7115,
+            "long": 2.6226,
             "city": "valldemossa",
             "Country": "spain",
             "zip": ""
@@ -218,16 +218,16 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.5744,
+            "long": 2.4203,
             "city": "andratx",
             "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.5744,
+            "long": 2.4203,
             "city": "andratx",
             "Country": "spain",
             "zip": ""
@@ -386,16 +386,16 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.7713,
+            "long": 2.9023,
             "city": "caimari",
             "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.7713,
+            "long": 2.9023,
             "city": "caimari",
             "Country": "spain",
             "zip": ""
@@ -554,16 +554,16 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.6272,
+            "long": 2.5283,
             "city": "puigpunyent",
             "Country": "spain",
             "zip": ""
         },
         "geoposicionament2": {
             "address": "",
-            "lat": 0,
-            "long": 0,
+            "lat": 39.6272,
+            "long": 2.5283,
             "city": "puigpunyent",
             "Country": "spain",
             "zip": ""
