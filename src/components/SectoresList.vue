@@ -13,15 +13,16 @@
 </template>
 
 <script>
-import sectores from "../assets/data/sectores.json";
+//import sectores from "../assets/data/sectores.json";
 import SectorCard from "./SectorCard";
 export default {
   name: "SectoresList",
   components: {
     SectorCard,
   },
+  props: ["sectores"],
   data: () => ({
-    sectores,
+    //sectores,
   }),
 };
 </script>
