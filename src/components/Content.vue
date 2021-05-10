@@ -89,6 +89,7 @@ export default {
       }
 
       this.localStorageSectores.push(this.newSector);
+      this.sectores.push(this.newSector);
       this.newSector = {
         identificador: -1,
         nom: "",
