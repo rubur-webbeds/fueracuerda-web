@@ -1,0 +1,708 @@
+[
+    {
+        "nom": "S'estret",
+        "descripcio": "Sector genial muy cerca de palma. Antes de Valldemossa",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 0,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/s'estret_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.6924,
+            "long": 2.6314,
+            "city": "valldemossa",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.7115,
+            "long": 2.6226,
+            "city": "valldemossa",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 0,
+            "acceso_parking": "Hay un parking al lado del sector",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Con el culo al aire",
+                    "grado": "5b",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 1,
+                    "nombre": "Busibus",
+                    "grado": "6c+",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Red stain",
+                    "grado": "6b+",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Movimiento sexy",
+                    "grado": "5+",
+                    "descripcion": "descripcion"
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 5,
+                "cubierto": true,
+                "filtra": false,
+                "afluencia": 2
+            }
+        }
+    },
+    {
+        "nom": "To pa ti",
+        "descripcio": "Sector clásico en Puig de Garrafa",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 1,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/to_pa_ti_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.55852,
+            "long": 2.42635,
+            "city": "andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.5744,
+            "long": 2.4203,
+            "city": "andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio":2,
+            "acceso_parking": "Aparca al lado de la depuradora de agua",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "To pa ti",
+                    "grado": "7a",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 1,
+                    "nombre": "Es mirall",
+                    "grado": "8b",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Equilibrium tremens",
+                    "grado": "?",
+                    "descripcion": "descripcion"
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 15,
+                "cubierto":"",
+                "filtra": "",
+                "afluencia": 2 
+            }
+        }
+    },
+    {
+        "nom": "Adalt de tot",
+        "descripcio": "Sector mítico de placa",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 2,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/caimari_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.7761,
+            "long": 2.8979,
+            "city": "caimari",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.7713,
+            "long": 2.9023,
+            "city": "caimari",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 2,
+            "acceso_parking": "Aparca en la orilla de la carretera",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Las bolas chinas L1",
+                    "grado": "6b+",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 1,
+                    "nombre": "Las bolas chinas",
+                    "grado": "7a/+",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Sweetie the poh",
+                    "grado": "7b",
+                    "descripcion": "descripcion"
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 20,
+                "cubierto":true,
+                "filtra": false,
+                "afluencia": 2
+            }
+        }
+    },
+    {
+        "nom": "Penyal des grau",
+        "descripcio": "Sector poco transitado. Bueno en verano",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 3,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/penyal_des_grau_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.64072,
+            "long": 2.53167,
+            "city": "puigpunyent",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.6272,
+            "long": 2.5283,
+            "city": "puigpunyent",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 1,
+            "acceso_parking": "Aparca en la orilla de la carretera",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Mariol.lo",
+                    "grado": "6a",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 1,
+                    "nombre": "Talaiot corcat",
+                    "grado": "6c",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Intrincate",
+                    "grado": "6a",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Tall en verduc",
+                    "grado": "6c",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Black block",
+                    "grado": "7a",
+                    "descripcion": "descripcion"
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 2,
+                "cubierto":true,
+                "filtra": false,
+                "afluencia": 0
+            }
+        }
+    }
+]
