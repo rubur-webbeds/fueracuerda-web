@@ -170,7 +170,7 @@
                 }
             ],
             "miscelanea": {
-                "tiempo_caminando": 15,
+                "tiempo_caminando": 5,
                 "cubierto": true,
                 "filtra": false,
                 "afluencia": 2
@@ -319,7 +319,7 @@
             "endTimeEvent": ""
         },
         "dadesPropies": {
-            "grado_medio":0,
+            "grado_medio":2,
             "acceso_parking": "Aparca al lado de la depuradora de agua",
             "vias": [
                 {
@@ -342,7 +342,7 @@
                 }
             ],
             "miscelanea": {
-                "tiempo_caminando": "",
+                "tiempo_caminando": 15,
                 "cubierto":"",
                 "filtra": "",
                 "afluencia":""
@@ -491,7 +491,7 @@
             "endTimeEvent": ""
         },
         "dadesPropies": {
-            "grado_medio": 0,
+            "grado_medio": 2,
             "acceso_parking": "Aparca en la orilla de la carretera",
             "vias": [
                 {
@@ -514,7 +514,7 @@
                 }
             ],
             "miscelanea": {
-                "tiempo_caminando": 14,
+                "tiempo_caminando": 20,
                 "cubierto":true,
                 "filtra": false,
                 "afluencia": 2
@@ -698,7 +698,7 @@
                 }
             ],
             "miscelanea": {
-                "tiempo_caminando": 14,
+                "tiempo_caminando": 2,
                 "cubierto":true,
                 "filtra": false,
                 "afluencia": 2
