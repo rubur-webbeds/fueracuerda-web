@@ -7,6 +7,8 @@
           :url="`/sector/${sector.identificador}`"
           :nombre="sector.nom"
           :foto_src="sector.imatges[0]"
+          :tiempo_caminando="sector.dadesPropies.miscelanea.tiempo_caminando"
+          :grado_medio="sector.dadesPropies.grado_medio"
         />
       </v-col>
     </v-row>
