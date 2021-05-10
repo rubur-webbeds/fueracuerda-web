@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row justify="center">
-      <SearchBar />
+      <SearchBar @filtersectores="filterSectores" />
       <v-btn
         class="mx-2"
         fab
@@ -12,7 +12,7 @@
         <v-icon dark> mdi-plus </v-icon>
       </v-btn>
     </v-row>
-    <SectoresList :sectores="sectores" />
+    <SectoresList :sectores="sectoresFiltrados" />
 
     <v-dialog v-model="showAddSectorForm" persistent max-width="600px">
       <v-card>
@@ -71,10 +71,13 @@ export default {
     localStorageSectores: [],
     idSiguienteSector: 100,
     JsonSectores,
-    sectores: []
+    sectores: [],
+    filter: ''
   }),
-  watch: {
-    
+  computed: {
+    sectoresFiltrados() {
+        return this.sectores.filter(x => x.nom.toLowerCase().includes(this.filter))
+    }
   },
   methods: {
     addSector() {
@@ -106,6 +109,10 @@ export default {
 
       // incremento el id del siguiente sector
       localStorage.setItem('id_sector', this.idSiguienteSector++);
+    },
+    filterSectores(filter){
+      //this.sectores = this.sectores.filter(x => x.nom.toLowerCase().includes(filter))
+      this.filter = filter;
     }
   },
   mounted(){
