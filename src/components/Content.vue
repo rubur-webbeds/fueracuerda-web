@@ -28,16 +28,6 @@
               ></v-text-field>
             </v-col>
           </v-row>
-          <v-row>
-            <v-col cols="12" md="12">
-              <v-textarea
-                solo
-                name="input-7-4"
-                label="Descripcion"
-                v-model="newSector.descripcio"
-              ></v-textarea>
-            </v-col>
-          </v-row>
         </v-container>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -66,25 +56,25 @@ export default {
     newSector: {
       identificador: -1,
       nom: "",
-      descripcio: "",
+      imatges: [{ src: "media/img/sectores/default.png" }],
     },
     localStorageSectores: [],
     idSiguienteSector: 100,
     JsonSectores,
     sectores: [],
-    filter: ''
+    filter: "",
   }),
   computed: {
     sectoresFiltrados() {
-        return this.sectores.filter(x => x.nom.toLowerCase().includes(this.filter))
-    }
+      return this.sectores.filter((x) =>
+        x.nom.toLowerCase().includes(this.filter)
+      );
+    },
   },
   methods: {
     addSector() {
       // guarda el sector en el local storage
       this.newSector.identificador = this.idSiguienteSector;
-      var newSector = JSON.stringify(this.newSector);
-      alert(newSector);
 
       // ensure they actually typed something
       if (!this.newSector) {
@@ -96,48 +86,50 @@ export default {
       this.newSector = {
         identificador: -1,
         nom: "",
-        descripcio: "",
+        imatges: [{ src: "media/img/sectores/default.png" }],
       };
 
       this.saveSectores();
       this.showAddSectorForm = false;
     },
-    saveSectores(){
+    saveSectores() {
       const parsed = JSON.stringify(this.localStorageSectores);
       // guardo el sector
-      localStorage.setItem('sectores', parsed);
+      localStorage.setItem("sectores", parsed);
 
       // incremento el id del siguiente sector
-      localStorage.setItem('id_sector', this.idSiguienteSector++);
+      localStorage.setItem("id_sector", this.idSiguienteSector++);
     },
-    filterSectores(filter){
+    filterSectores(filter) {
       //this.sectores = this.sectores.filter(x => x.nom.toLowerCase().includes(filter))
       this.filter = filter;
-    }
+    },
   },
-  mounted(){
+  mounted() {
     // leer sectores guardados en el local storage
-    if (localStorage.getItem('sectores')) {
+    if (localStorage.getItem("sectores")) {
       try {
-        this.localStorageSectores = JSON.parse(localStorage.getItem('sectores'));
-      } catch(e) {
-        console.error('Something wrong happened T_T. ', e);
+        this.localStorageSectores = JSON.parse(
+          localStorage.getItem("sectores")
+        );
+      } catch (e) {
+        console.error("Something wrong happened T_T. ", e);
       }
     }
 
     // leer id del siguiente sector a guardar
-    if (localStorage.getItem('id_sector')) {
+    if (localStorage.getItem("id_sector")) {
       try {
-        this.idSiguienteSector = JSON.parse(localStorage.getItem('id_sector'));
-      } catch(e) {
-        console.error('Something wrong happened T_T. ', e);
+        this.idSiguienteSector = JSON.parse(localStorage.getItem("id_sector"));
+      } catch (e) {
+        console.error("Something wrong happened T_T. ", e);
       }
     }
 
     // merge de todos los sectores
-    if(this.JsonSectores && this.localStorageSectores){
-      this.sectores = [...this.JsonSectores, ...this.localStorageSectores]
+    if (this.JsonSectores && this.localStorageSectores) {
+      this.sectores = [...this.JsonSectores, ...this.localStorageSectores];
     }
-  }
+  },
 };
 </script>
