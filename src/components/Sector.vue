@@ -84,7 +84,7 @@
         <v-icon v-else large color="black darken-2"> 
           mdi-numeric-3-circle-outline
         </v-icon>
-        <v-icon v-if="this.sector.dadesPropies.miscelanea.cubierto === true" large color="grey darken-2"> 
+        <v-icon v-if="this.sector.dadesPropies.miscelanea.cubierto === true" large color="black darken-2"> 
           mdi-palette-swatch
         </v-icon>
         <v-icon v-else large color="black darken-2"> 
