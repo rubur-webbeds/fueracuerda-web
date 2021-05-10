@@ -7,7 +7,7 @@
       ></v-img>
       <v-card-title>{{ nombre }}</v-card-title>
       <v-card-actions>
-        <v-btn v-if="urlExterna === false" text color="deep-purple accent-4" :to="url" target="_blank"
+        <v-btn v-if="urlExterna === false" text color="deep-purple accent-4" :to="url"
           >Detalles</v-btn
         >
          <v-btn v-else text color="deep-purple accent-4" :href=url target="_blank"
