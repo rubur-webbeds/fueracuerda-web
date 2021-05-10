@@ -3,7 +3,8 @@
     <v-row justify="center">
       <v-col md="4" v-for="sector in sectores" :key="sector.identificador">
         <SectorCard
-          :id="sector.identificador"
+          :urlExterna="false"
+          :url="`/sector/${sector.identificador}`"
           :nombre="sector.nom"
           :foto_src="sector.imatges[0]"
         />
