@@ -5,7 +5,7 @@
         <SectorCard
           :id="sector.identificador"
           :nombre="sector.nom"
-          :descripcion="sector.descripcio"
+          :foto_src="sector.imatges[0]"
         />
       </v-col>
     </v-row>
