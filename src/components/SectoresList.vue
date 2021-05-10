@@ -6,7 +6,7 @@
           :urlExterna="false"
           :url="`/sector/${sector.identificador}`"
           :nombre="sector.nom"
-          :descripcion="sector.descripcio"
+          :foto_src="sector.imatges[0]"
         />
       </v-col>
     </v-row>
@@ -14,15 +14,16 @@
 </template>
 
 <script>
-import sectores from "../assets/data/sectores.json";
+//import sectores from "../assets/data/sectores.json";
 import SectorCard from "./SectorCard";
 export default {
   name: "SectoresList",
   components: {
     SectorCard,
   },
+  props: ["sectores"],
   data: () => ({
-    sectores,
+    //sectores,
   }),
 };
 </script>
