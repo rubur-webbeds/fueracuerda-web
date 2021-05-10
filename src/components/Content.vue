@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row justify="center">
-      <SearchBar />
+      <SearchBar @filtersectores="filterSectores" />
       <v-btn
         class="mx-2"
         fab
@@ -12,7 +12,7 @@
         <v-icon dark> mdi-plus </v-icon>
       </v-btn>
     </v-row>
-    <SectoresList />
+    <SectoresList :sectores="sectoresFiltrados" />
 
     <v-dialog v-model="showAddSectorForm" persistent max-width="600px">
       <v-card>
@@ -23,7 +23,7 @@
           <v-row>
             <v-col cols="12" md="6">
               <v-text-field
-                v-model="newSector.nombre"
+                v-model="newSector.nom"
                 label="Nombre"
               ></v-text-field>
             </v-col>
@@ -34,7 +34,7 @@
                 solo
                 name="input-7-4"
                 label="Descripcion"
-                v-model="newSector.descripcion"
+                v-model="newSector.descripcio"
               ></v-textarea>
             </v-col>
           </v-row>
@@ -52,6 +52,7 @@
 </template>
 
 <script>
+import JsonSectores from "../assets/data/sectores.json";
 import SectoresList from "./SectoresList";
 import SearchBar from "./SearchBar";
 export default {
@@ -63,17 +64,25 @@ export default {
   data: () => ({
     showAddSectorForm: false,
     newSector: {
-      id: -1,
-      nombre: "",
-      descripcion: "",
+      identificador: -1,
+      nom: "",
+      descripcio: "",
     },
     localStorageSectores: [],
-    idSiguienteSector: 100
+    idSiguienteSector: 100,
+    JsonSectores,
+    sectores: [],
+    filter: ''
   }),
+  computed: {
+    sectoresFiltrados() {
+        return this.sectores.filter(x => x.nom.toLowerCase().includes(this.filter))
+    }
+  },
   methods: {
     addSector() {
       // guarda el sector en el local storage
-      this.newSector.id = this.idSiguienteSector;
+      this.newSector.identificador = this.idSiguienteSector;
       var newSector = JSON.stringify(this.newSector);
       alert(newSector);
 
@@ -83,13 +92,15 @@ export default {
       }
 
       this.localStorageSectores.push(this.newSector);
-      this.newCat = {
-        id: -1,
-        nombre: "",
-        descripcion: "",
+      this.sectores.push(this.newSector);
+      this.newSector = {
+        identificador: -1,
+        nom: "",
+        descripcio: "",
       };
 
       this.saveSectores();
+      this.showAddSectorForm = false;
     },
     saveSectores(){
       const parsed = JSON.stringify(this.localStorageSectores);
@@ -98,6 +109,10 @@ export default {
 
       // incremento el id del siguiente sector
       localStorage.setItem('id_sector', this.idSiguienteSector++);
+    },
+    filterSectores(filter){
+      //this.sectores = this.sectores.filter(x => x.nom.toLowerCase().includes(filter))
+      this.filter = filter;
     }
   },
   mounted(){
@@ -117,6 +132,11 @@ export default {
       } catch(e) {
         console.error('Something wrong happened T_T. ', e);
       }
+    }
+
+    // merge de todos los sectores
+    if(this.JsonSectores && this.localStorageSectores){
+      this.sectores = [...this.JsonSectores, ...this.localStorageSectores]
     }
   }
 };
