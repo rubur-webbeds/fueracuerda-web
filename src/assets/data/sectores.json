@@ -345,7 +345,7 @@
                 "tiempo_caminando": "",
                 "cubierto":"",
                 "filtra": "",
-                "afluencia":""
+                "afluencia": 2 
             }
         }
     },
@@ -701,7 +701,7 @@
                 "tiempo_caminando": 14,
                 "cubierto":true,
                 "filtra": false,
-                "afluencia": 2
+                "afluencia": 0
             }
         }
     }

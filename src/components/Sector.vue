@@ -9,14 +9,14 @@
       <h2>Acceso al sector</h2>
       <p>{{ this.sector.dadesPropies.acceso_parking }}</p>
     </div>
-    <v-row id="vias" >
+    <v-row id="vias" justify="space-around">
       <v-data-table
         :headers="this.headers"
         :items="this.vias"
         class="my-10 elevation-1"
       ></v-data-table>
     </v-row>
-    <v-row id="mapas">
+    <v-row id="mapas" justify="space-around">
       <div class="map border my-5">
         <!--MAPA SECTOR-->
         <div>
@@ -69,15 +69,47 @@
         </div>
       </div>
     </v-row>
-    <v-row id="misc">
-      <div class="comments border my-5">
-        <h1>MISCELANEA</h1>
+    <v-row id="misc" justify="space-around">
+      <div class="my-5">
         <v-img :src="`http://www.7timer.info/bin/civillight.php?lon=${this.sector.geoposicionament1.long}&lat=${this.sector.geoposicionament1.lat}&ac=0&lang=en&unit=metric&output=internal&tzshift=0`" />
+        <v-icon v-if="this.sector.dadesPropies.grado_medio === 0" large color="black darken-2"> 
+          mdi-numeric-0-circle-outline
+        </v-icon>
+        <v-icon v-else-if="this.sector.grado_medio === 1" large color="black darken-2"> 
+          mdi-numeric-1-circle-outline
+        </v-icon>
+        <v-icon v-else-if="this.sector.grado_medio === 2" large color="black darken-2"> 
+          mdi-numeric-2-circle-outline
+        </v-icon>
+        <v-icon v-else large color="black darken-2"> 
+          mdi-numeric-3-circle-outline
+        </v-icon>
+        <v-icon v-if="this.sector.dadesPropies.miscelanea.cubierto === true" large color="grey darken-2"> 
+          mdi-palette-swatch
+        </v-icon>
+        <v-icon v-else large color="black darken-2"> 
+          mdi-palette-swatch-outline
+        </v-icon>
+        <v-icon v-if="this.sector.dadesPropies.miscelanea.filtra === true" large color="black darken-2"> 
+          mdi-water-check
+        </v-icon>
+        <v-icon v-else large color="black darken-2"> 
+          mdi-water-remove-outline
+        </v-icon>
+        <v-icon v-if="this.sector.dadesPropies.miscelanea.afluencia === 0" large color="black darken-2"> 
+          mdi-account
+        </v-icon>
+        <v-icon v-else-if="this.sector.dadesPropies.miscelanea.afluencia === 1" large color="black darken-2"> 
+          mdi-account-multiple
+        </v-icon> 
+        <v-icon v-else large color="black darken-2"> 
+          mdi-account-group
+        </v-icon> 
       </div>
     </v-row>
-    <v-row id="comentarios">
-      <div class="comments border my-5">
-        <h1>COMENTARIOS</h1>
+    <v-row id="comentarios" justify="space-around">
+      <div class="comments border my-15">
+        <h1> COMENTARIOS </h1>
       </div>
     </v-row>
   </v-container>
@@ -92,7 +124,7 @@ export default {
     sector: null,
     vias: [],
     headers: [],
-    zoom: 16,
+    zoom: 13,
     center: [0,0],
     center_sector: [0, 0],
     center_parking: [0, 0],
@@ -105,11 +137,6 @@ export default {
 
     this.vias = this.sector.dadesPropies.vias;
 
-    this.center = [
-      this.sector.geoposicionament1.long,
-      this.sector.geoposicionament1.lat,
-    ];
-
     this.center_sector = [
       this.sector.geoposicionament1.long,
       this.sector.geoposicionament1.lat,
@@ -117,6 +144,10 @@ export default {
     this.center_parking = [
       this.sector.geoposicionament2.long,
       this.sector.geoposicionament2.lat,
+    ];
+    this.center = [
+      this.sector.geoposicionament1.long,
+      this.sector.geoposicionament1.lat,
     ];
 
     Object.keys(this.vias[0]).forEach((el) => {
