@@ -7,7 +7,10 @@
       ></v-img>
       <v-card-title>{{ nombre }}</v-card-title>
       <v-card-actions>
-        <v-btn text color="deep-purple accent-4" :to="`/sector/${id}`"
+        <v-btn v-if="urlExterna === false" text color="deep-purple accent-4" :to="url" target="_blank"
+          >Detalles</v-btn
+        >
+         <v-btn v-else text color="deep-purple accent-4" :href=url target="_blank"
           >Detalles</v-btn
         >
       </v-card-actions>
@@ -18,9 +21,14 @@
 <script>
 export default {
   name: "SectorCard",
-  props: ["nombre", "id", "foto_src"],
+  props: ["nombre", "foto_src", "url", "urlExterna"],
   data: () => ({
     //
   }),
+  methods:{
+    redirect(){
+      window.location='https://calasdemallorca.netlify.app/cala.html?1'
+    }
+  }
 };
 </script>

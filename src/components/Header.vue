@@ -12,13 +12,19 @@
           <router-link class="py-2 white--text text-center" to="/"
             >Home</router-link
           >
+          <router-link class="py-2 white--text text-center" to="/calas"
+            >Calas</router-link
+          >
         </div>
       </v-toolbar>
     </div>
     <div id="carousel">
       <v-carousel v-model="model">
         <v-carousel-item
-          v-for="(foto, i) in fotos_header" :key="i" :src="foto.src">
+          v-for="(foto, i) in fotos_header"
+          :key="i"
+          :src="foto.src"
+        >
         </v-carousel-item>
       </v-carousel>
     </div>
