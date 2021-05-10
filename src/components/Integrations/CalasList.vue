@@ -7,7 +7,7 @@
           :urlExterna="true"
           :url="`https://calasdemallorca.netlify.app/cala.html?${cala.identificador - 1}`"
           :nombre="cala.nom"
-          :descripcion="cala.descripcio"
+          :foto_src="cala.imatges[0]"
         />
       </v-col>
     </v-row>
