@@ -12,6 +12,7 @@
           <router-link class="py-2 white--text text-center" to="/"
             >Home</router-link
           >
+          <v-spacer />
           <router-link class="py-2 white--text text-center" to="/calas"
             >Calas</router-link
           >
