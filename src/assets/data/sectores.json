@@ -25,7 +25,11 @@
         "icones": [
             ""
         ],
-        "imatges": [],
+        "imatges": [
+            {
+                "src": "media/img/sectores/s'estret_1.png"
+            }
+        ],
         "videos": [
             {
                 "tipus": "",
@@ -44,8 +48,8 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 39.7115,
-            "long": 2.6226,
+            "lat": 39.6924,
+            "long": 2.6314,
             "city": "valldemossa",
             "Country": "spain",
             "zip": ""
@@ -199,7 +203,11 @@
         "icones": [
             ""
         ],
-        "imatges": [],
+        "imatges": [
+            {
+                "src": "media/img/sectores/to_pa_ti_1.png"
+            }
+        ],
         "videos": [
             {
                 "tipus": "",
@@ -218,8 +226,8 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 39.5744,
-            "long": 2.4203,
+            "lat": 39.55852,
+            "long": 2.42635,
             "city": "andratx",
             "Country": "spain",
             "zip": ""
@@ -367,7 +375,11 @@
         "icones": [
             ""
         ],
-        "imatges": [],
+        "imatges": [
+            {
+                "src": "media/img/sectores/caimari_1.png"
+            }
+        ],
         "videos": [
             {
                 "tipus": "",
@@ -386,8 +398,8 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 39.7713,
-            "long": 2.9023,
+            "lat": 39.7761,
+            "long": 2.8979,
             "city": "caimari",
             "Country": "spain",
             "zip": ""
@@ -535,7 +547,11 @@
         "icones": [
             ""
         ],
-        "imatges": [],
+        "imatges": [
+            {
+                "src": "media/img/sectores/penyal_des_grau_1.png"
+            }
+        ],
         "videos": [
             {
                 "tipus": "",
@@ -554,8 +570,8 @@
         ],
         "geoposicionament1": {
             "address": "",
-            "lat": 39.6272,
-            "long": 2.5283,
+            "lat": 39.64072,
+            "long": 2.53167,
             "city": "puigpunyent",
             "Country": "spain",
             "zip": ""
