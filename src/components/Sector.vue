@@ -66,19 +66,13 @@
               </vl-feature>
             </vl-layer-vector>
           </vl-map>
-          <!-- <div style="padding: 20px">
-              Zoom: {{ zoom }}<br>
-              Center: {{ center }}<br>
-              Rotation: {{ rotation }}<br>
-              My geolocation: {{ geolocPosition }}
-            </div> -->
         </div>
       </div>
     </v-row>
     <v-row id="misc">
       <div class="comments border my-5">
         <h1>MISCELANEA</h1>
-        time: {{ this.totalVuePackages[0] }}
+        <v-img :src="`http://www.7timer.info/bin/civillight.php?lon=${this.sector.geoposicionament1.long}&lat=${this.sector.geoposicionament1.lat}&ac=0&lang=en&unit=metric&output=internal&tzshift=0`" />
       </div>
     </v-row>
     <v-row id="comentarios">
@@ -129,22 +123,7 @@ export default {
       var header = { text: el, value: el};
       this.headers.push(header);
     });
-
-    const response = await fetch("https://api.meteomatics.com/2021-05-10T00:00:00Z/t_2m:C/52.520551,13.461804/csv");
-    const data = await response.csv();
-    this.totalVuePackages = data.total;
-    document.getElementById("misc").innerHTML(this.totalVuePackages[0]);
-
-  },
-  // currentDate() {
-  //   var current = new Date().format("yyyy-MM-ddThh:mm:ssZ");
-  //   const current_time = current.now();
-  //   return current_time;
-  //   // this.current_time = current.now();
-
-  //   // const response = await fetch("api.meteomatics.com/"+;
-  //   // const data = await response.json();
-  // }
+  }
 };
 </script>
 
