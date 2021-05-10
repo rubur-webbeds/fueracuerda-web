@@ -78,6 +78,7 @@
     <v-row id="misc">
       <div class="comments border my-5">
         <h1>MISCELANEA</h1>
+        time: {{ this.totalVuePackages[0] }}
       </div>
     </v-row>
     <v-row id="comentarios">
@@ -104,7 +105,7 @@ export default {
     rotation: 0,
     geolocPosition: undefined,
   }),
-  created() {
+  async created() {
     var id = this.$route.params.id;
     this.sector = sectores.filter((sector) => sector.identificador == id)[0];
 
@@ -128,7 +129,22 @@ export default {
       var header = { text: el, value: el};
       this.headers.push(header);
     });
+
+    const response = await fetch("https://api.meteomatics.com/2021-05-10T00:00:00Z/t_2m:C/52.520551,13.461804/csv");
+    const data = await response.csv();
+    this.totalVuePackages = data.total;
+    document.getElementById("misc").innerHTML(this.totalVuePackages[0]);
+
   },
+  // currentDate() {
+  //   var current = new Date().format("yyyy-MM-ddThh:mm:ssZ");
+  //   const current_time = current.now();
+  //   return current_time;
+  //   // this.current_time = current.now();
+
+  //   // const response = await fetch("api.meteomatics.com/"+;
+  //   // const data = await response.json();
+  // }
 };
 </script>
 
