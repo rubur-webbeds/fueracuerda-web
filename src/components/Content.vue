@@ -14,7 +14,7 @@
     </v-row>
     <SectoresList :sectores="sectoresFiltrados" />
 
-    <v-dialog v-model="showAddSectorForm" persistent max-width="600px">
+    <v-dialog v-model="showAddSectorForm" persistent max-width="500px">
       <v-card>
         <v-card-title>
           <span class="headline">Añadir sector</span>
@@ -25,6 +25,19 @@
               <v-text-field
                 v-model="newSector.nom"
                 label="Nombre"
+              ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="2">
+              <v-text-field
+                v-model="newSector.dadesPropies.grado_medio"
+                label="Dificultad"
+              ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="3">
+              <v-text-field
+                v-model="newSector.dadesPropies.miscelanea.tiempo_caminando"
+                label="Tiempo acceso"
+                suffix="min"
               ></v-text-field>
             </v-col>
           </v-row>
@@ -57,6 +70,12 @@ export default {
       identificador: -1,
       nom: "",
       imatges: [{ src: "media/img/sectores/default.png" }],
+      dadesPropies: {
+        grado_medio: 1,
+        miscelanea: {
+          tiempo_caminando: 1,
+        },
+      },
     },
     localStorageSectores: [],
     idSiguienteSector: 100,
@@ -87,6 +106,12 @@ export default {
         identificador: -1,
         nom: "",
         imatges: [{ src: "media/img/sectores/default.png" }],
+        dadesPropies: {
+          grado_medio: 1,
+          miscelanea: {
+            tiempo_caminando: 1,
+          },
+        }
       };
 
       this.saveSectores();
