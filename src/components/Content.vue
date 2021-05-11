@@ -1,11 +1,10 @@
 <template>
   <v-container>
-    <v-row justify="center">
+    <v-row justify="end" class="pb-4 pr-9">
       <SearchBar @filtersectores="filterSectores" />
       <!-- ADD BUTTON -->
       <v-btn
         class="mx-2"
-        fab
         dark
         color="indigo"
         @click="showAddSectorForm = true"
