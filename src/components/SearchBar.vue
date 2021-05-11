@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row justify="center">
+    <v-row justify="center" class="ml-5">
       <v-col cols="12" md="3">
         <v-text-field label="Busca un sector" outlined v-model="filter" @keyup.enter="filterSectores"></v-text-field>
       </v-col>
