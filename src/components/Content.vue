@@ -2,6 +2,7 @@
   <v-container>
     <v-row justify="center">
       <SearchBar @filtersectores="filterSectores" />
+      <!-- ADD BUTTON -->
       <v-btn
         class="mx-2"
         fab
@@ -11,6 +12,25 @@
       >
         <v-icon dark> mdi-plus </v-icon>
       </v-btn>
+      <!-- SORT BUTTON -->
+      <v-menu offset-y>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn dark v-bind="attrs" v-on="on">
+            <v-icon>mdi-sort</v-icon>
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item @click="sortSectoresDifAsc()">
+            <v-list-item-title>Dificultad ascendente</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="sortSectoresDifDesc()">
+            <v-list-item-title>Dificultad descendente</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="sortSectoresTiempoAsc()">
+            <v-list-item-title>Tiempo acceso</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-row>
     <SectoresList :sectores="sectoresFiltrados" />
 
@@ -111,7 +131,7 @@ export default {
           miscelanea: {
             tiempo_caminando: 1,
           },
-        }
+        },
       };
 
       this.saveSectores();
@@ -129,6 +149,45 @@ export default {
       //this.sectores = this.sectores.filter(x => x.nom.toLowerCase().includes(filter))
       this.filter = filter;
     },
+    sortSectoresDifDesc(){
+      this.sectores.sort((a, b) => {
+        const aAl = a.dadesPropies.grado_medio;
+        const bAl = b.dadesPropies.grado_medio;
+        let comparison = 0;
+        if (aAl > bAl) {
+          comparison = 1;
+        } else if (aAl < bAl) {
+          comparison = -1;
+        }
+        return comparison * -1;
+      });
+    },
+    sortSectoresDifAsc(){
+      this.sectores.sort((a, b) => {
+        const aAl = a.dadesPropies.grado_medio;
+        const bAl = b.dadesPropies.grado_medio;
+        let comparison = 0;
+        if (aAl > bAl) {
+          comparison = 1;
+        } else if (aAl < bAl) {
+          comparison = -1;
+        }
+        return comparison;
+      });
+    },
+    sortSectoresTiempoAsc(){
+      this.sectores.sort((a, b) => {
+        const aAl = a.dadesPropies.miscelanea.tiempo_caminando;
+        const bAl = b.dadesPropies.miscelanea.tiempo_caminando;
+        let comparison = 0;
+        if (aAl > bAl) {
+          comparison = 1;
+        } else if (aAl < bAl) {
+          comparison = -1;
+        }
+        return comparison;
+      });
+    }
   },
   mounted() {
     // leer sectores guardados en el local storage
