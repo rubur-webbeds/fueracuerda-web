@@ -15,8 +15,6 @@
         :items="this.vias"
         class="my-10 elevation-1"
       ></v-data-table>
-    </v-row>
-    <v-row id="mapas" justify="space-around">
       <div class="map border my-5">
         <!--MAPA SECTOR-->
         <div>
@@ -69,6 +67,9 @@
         </div>
       </div>
     </v-row>
+    <v-row id="mapas" justify="space-around">
+      
+    </v-row>
     <v-row id="misc" justify="space-around">
       <div class="my-5">
         <v-img :src="`http://www.7timer.info/bin/civillight.php?lon=${this.sector.geoposicionament1.long}&lat=${this.sector.geoposicionament1.lat}&ac=0&lang=en&unit=metric&output=internal&tzshift=0`" />
@@ -108,18 +109,21 @@
       </div>
     </v-row>
     <v-row id="comentarios" justify="space-around">
-      <div class="comments border my-15">
-        <h1> COMENTARIOS </h1>
-      </div>
+      <!-- componente comentarios -->
+      <Comentarios/>
     </v-row>
   </v-container>
 </template>
 
 <script>
 import sectores from "../assets/data/sectores.json";
+import Comentarios from "./Comentarios";
 
 export default {
   name: "Sector",
+  components: {
+    Comentarios,
+  },
   data: () => ({
     sector: null,
     vias: [],
