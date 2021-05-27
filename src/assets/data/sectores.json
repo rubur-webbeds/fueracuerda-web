@@ -900,7 +900,7 @@
         "descripcio": "Deliciosa ubicación con jovial atmósfera",
         "detall": "escalada",
         "tipus": "deportes",
-        "identificador": 4,
+        "identificador": 5,
         "preu": {
             "import": "",
             "coment-preu": ""
@@ -1090,7 +1090,7 @@
         "descripcio": "Impresionante ubicación, aunque difícil de leer",
         "detall": "escalada",
         "tipus": "deportes",
-        "identificador": 4,
+        "identificador": 6,
         "preu": {
             "import": "",
             "coment-preu": ""
