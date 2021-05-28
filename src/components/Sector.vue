@@ -11,7 +11,7 @@
     </div>
     <v-row id="vias" justify="space-around">
       <v-data-table
-        :headers="this.headers"
+        :headers="this.headers_vias"
         :items="this.vias"
         class="my-10 elevation-1"
       ></v-data-table>
@@ -63,54 +63,115 @@
                 </vl-style-box>
               </vl-feature>
             </vl-layer-vector>
+
+            <vl-layer-vector
+              v-for="cala_cercana in load_calas_cercanas()"
+              v-bind:key="cala_cercana.nom"
+            >
+              <vl-feature>
+                <vl-geom-point
+                  :coordinates="[
+                    cala_cercana.geoposicionament1.long,
+                    cala_cercana.geoposicionament1.lat,
+                  ]"
+                ></vl-geom-point>
+
+                <vl-style-box>
+                  <vl-style-circle :radius="5">
+                    <vl-style-fill color="green"></vl-style-fill>
+                    <vl-style-stroke color="black"></vl-style-stroke>
+                  </vl-style-circle>
+                </vl-style-box>
+              </vl-feature>
+            </vl-layer-vector>
           </vl-map>
+          <div class="my-5">
+            <v-icon medium color="red darken-2"> mdi-circle </v-icon>
+            <span> Sector </span>
+            <v-icon medium color="blue darken-2"> mdi-circle </v-icon>
+            <span> Párking </span>
+            <v-icon medium color="green darken-2"> mdi-circle </v-icon>
+            <span> Cala </span>
+          </div>
         </div>
       </div>
     </v-row>
-    <v-row id="mapas" justify="space-around">
-      
+    <v-row id="info_cala" justify="center">
+      <v-data-table
+        :headers="this.headers_calas"
+        :items="calas_cercanas"
+        class="my-10 elevation-1"
+      ></v-data-table>
     </v-row>
     <v-row id="misc" justify="space-around">
       <div class="my-5">
-        <v-img :src="`http://www.7timer.info/bin/civillight.php?lon=${this.sector.geoposicionament1.long}&lat=${this.sector.geoposicionament1.lat}&ac=0&lang=en&unit=metric&output=internal&tzshift=0`" />
-        <v-icon v-if="this.sector.dadesPropies.grado_medio === 0" large color="black darken-2"> 
+        <v-img
+          :src="`http://www.7timer.info/bin/civillight.php?lon=${this.sector.geoposicionament1.long}&lat=${this.sector.geoposicionament1.lat}&ac=0&lang=en&unit=metric&output=internal&tzshift=0`"
+        />
+        <v-icon
+          v-if="this.sector.dadesPropies.grado_medio === 0"
+          large
+          color="black darken-2"
+        >
           mdi-numeric-0-circle-outline
         </v-icon>
-        <v-icon v-else-if="this.sector.grado_medio === 1" large color="black darken-2"> 
+        <v-icon
+          v-else-if="this.sector.grado_medio === 1"
+          large
+          color="black darken-2"
+        >
           mdi-numeric-1-circle-outline
         </v-icon>
-        <v-icon v-else-if="this.sector.grado_medio === 2" large color="black darken-2"> 
+        <v-icon
+          v-else-if="this.sector.grado_medio === 2"
+          large
+          color="black darken-2"
+        >
           mdi-numeric-2-circle-outline
         </v-icon>
-        <v-icon v-else large color="black darken-2"> 
+        <v-icon v-else large color="black darken-2">
           mdi-numeric-3-circle-outline
         </v-icon>
-        <v-icon v-if="this.sector.dadesPropies.miscelanea.cubierto === true" large color="black darken-2"> 
+        <v-icon
+          v-if="this.sector.dadesPropies.miscelanea.cubierto === true"
+          large
+          color="black darken-2"
+        >
           mdi-palette-swatch
         </v-icon>
-        <v-icon v-else large color="black darken-2"> 
+        <v-icon v-else large color="black darken-2">
           mdi-palette-swatch-outline
         </v-icon>
-        <v-icon v-if="this.sector.dadesPropies.miscelanea.filtra === true" large color="black darken-2"> 
+        <v-icon
+          v-if="this.sector.dadesPropies.miscelanea.filtra === true"
+          large
+          color="black darken-2"
+        >
           mdi-water-check
         </v-icon>
-        <v-icon v-else large color="black darken-2"> 
+        <v-icon v-else large color="black darken-2">
           mdi-water-remove-outline
         </v-icon>
-        <v-icon v-if="this.sector.dadesPropies.miscelanea.afluencia === 0" large color="black darken-2"> 
+        <v-icon
+          v-if="this.sector.dadesPropies.miscelanea.afluencia === 0"
+          large
+          color="black darken-2"
+        >
           mdi-account
         </v-icon>
-        <v-icon v-else-if="this.sector.dadesPropies.miscelanea.afluencia === 1" large color="black darken-2"> 
+        <v-icon
+          v-else-if="this.sector.dadesPropies.miscelanea.afluencia === 1"
+          large
+          color="black darken-2"
+        >
           mdi-account-multiple
-        </v-icon> 
-        <v-icon v-else large color="black darken-2"> 
-          mdi-account-group
-        </v-icon> 
+        </v-icon>
+        <v-icon v-else large color="black darken-2"> mdi-account-group </v-icon>
       </div>
     </v-row>
     <v-row id="comentarios" justify="space-around">
       <!-- componente comentarios -->
-      <Comentarios/>
+      <Comentarios />
     </v-row>
   </v-container>
 </template>
@@ -127,15 +188,18 @@ export default {
   data: () => ({
     sector: null,
     vias: [],
-    headers: [],
-    zoom: 13,
-    center: [0,0],
+    headers_vias: [],
+    headers_calas: [],
+    zoom: 12,
+    center: [0, 0],
     center_sector: [0, 0],
     center_parking: [0, 0],
     rotation: 0,
     geolocPosition: undefined,
+    calas: [],
+    calas_cercanas: new Array(3),
   }),
-  async created() {
+  created() {
     var id = this.$route.params.id;
     this.sector = sectores.filter((sector) => sector.identificador == id)[0];
 
@@ -155,10 +219,96 @@ export default {
     ];
 
     Object.keys(this.vias[0]).forEach((el) => {
-      var header = { text: el, value: el};
-      this.headers.push(header);
+      var header = { text: el, value: el };
+      this.headers_vias.push(header);
     });
-  }
+
+    fetch("https://calasdemallorca.netlify.app/_json/datos.json")
+      .then((res) => res.json())
+      .then((res) => {
+        this.calas = res;
+      });
+  },
+  methods: {
+    load_calas_cercanas() {
+      var distancia_cala_dentro, distancia_cala_fuera;
+      var i, j;
+      //cargamos las primeras cinco calas independientemente de su distancia relativa al párking.
+      for (i = 0; i < this.calas.length && i < 3; i++) {
+        this.calas_cercanas[i] = this.calas[i];
+      }
+      //comparamos la distancia relativa de cada cala dentro del array con cada cala restante y se subsistuyen eventualmente por las 5 más cercanas.
+      for (i = 3; i < this.calas.length; i++) {
+        distancia_cala_fuera = Math.sqrt(
+          Math.pow(
+            this.calas[i].geoposicionament1.long -
+              this.sector.geoposicionament2.long,
+            2
+          ) +
+            Math.pow(
+              this.calas[i].geoposicionament1.lat -
+                this.sector.geoposicionament2.lat,
+              2
+            )
+        );
+
+        // recorremos el array de calas guardadas para sustituir por la cala de esta iteración si es más cercana que alguna de las guardadas.
+        for (j = 0; j < this.calas_cercanas.length; j++) {
+          distancia_cala_dentro = Math.sqrt(
+            Math.pow(
+              this.calas_cercanas[j].geoposicionament1.long -
+                this.sector.geoposicionament2.long,
+              2
+            ) +
+              Math.pow(
+                this.calas_cercanas[j].geoposicionament1.lat -
+                  this.sector.geoposicionament2.lat,
+                2
+              )
+          );
+
+          if (distancia_cala_dentro > distancia_cala_fuera) {
+            this.calas_cercanas[j] = this.calas[i];
+            break;
+          }
+        }
+      }
+
+      //características de la cala que deseamos obtener
+      var header_index = [
+        "nom",
+        "puntuacio",
+        "tipusCala",
+        "tipusAcces",
+        "accesMinusvalids",
+        "nudista",
+        "hamacas",
+        "parking",
+        "animals",
+        "dutxes",
+        "lavabos",
+        "alquilerEmbarcacions",
+        "socorrista",
+        "bar",
+      ];
+
+      Object.keys(this.calas_cercanas[0]).forEach((el) => {
+        var header = { text: el, value: el };
+        //seleccionamos los apartados de "cala" que deseamos mostrar fijándonos en su estructura json.
+        if (header_index.includes(header.text)) this.headers_calas.push(header);
+      });
+
+      //caraxcterísticas dentro de dadesPropries en serveis
+      // Object.keys(this.calas_cercanas[0].dadesPropies.serveis).forEach((el) => {
+      //   var header = { text: el, value: el};
+      //   //seleccionamos los apartados de "cala" que deseamos mostrar fijándonos en su estructura json.
+      //   if(header_index.includes(el))
+      //   this.headers_calas.push(header);
+      // });
+
+      return this.calas_cercanas;
+    },
+  },
 };
 </script>
 
