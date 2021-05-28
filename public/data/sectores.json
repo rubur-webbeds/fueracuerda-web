@@ -704,5 +704,575 @@
                 "afluencia": 0
             }
         }
+    },
+    {
+        "nom": "Mont Port",
+        "descripcio": "Sector cerca de Puerto de Andratx. Con vistas al mar",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 4,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/montport_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.5551,
+            "long": 2.372,
+            "city": "puerto andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.555555, 
+            "long": 2.374945,
+            "city": "puerto andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 1,
+            "acceso_parking": "Continua por el camino de tierra. En la bifurcación sigue por la derecha",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Pequeño coatí",
+                    "grado": "6a+",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 1,
+                    "nombre": "Alegría",
+                    "grado": "5c",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Hematoma",
+                    "grado": "5b",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Sherpa",
+                    "grado": "7a+",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Parque de diversión",
+                    "grado": "6a+",
+                    "descripcion": "descripcion"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Hielo negro",
+                    "grado": "6a",
+                    "descripcion": "descripcion"
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 20,
+                "cubierto": false,
+                "filtra": false,
+                "afluencia": 1
+            }
+        }
+    },
+    {
+        "nom": "Tijuana",
+        "descripcio": "Deliciosa ubicación con jovial atmósfera",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 5,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/tijuana_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.32713,
+            "long": 3.15044,
+            "city": "santanyi",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.328781,
+            "long": 3.150960,
+            "city": "santanyi",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 1,
+            "acceso_parking": "Ve hacia el mar y acabarás encima de las vías. Bajar por la derecha",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Left wing",
+                    "grado": "6a",
+                    "descripcion": "It can be a bit greasy up to the second bolt. Continue rightwards and then pull over a bulge to finish"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Churrito y pelete",
+                    "grado": "5a",
+                    "descripcion": "Very nice climbing starting up a short groove"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Blame it on the rain",
+                    "grado": "7a+",
+                    "descripcion": "Start at the right-hand end of the ledge"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Es nas",
+                    "grado": "8a",
+                    "descripcion": "Bouldery moves out right"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Cancamos",
+                    "grado": "7b",
+                    "descripcion": "The centre of the inverted 'V'"
+                },
+                {
+                    "id": 6,
+                    "nombre": "Flesh for Dani",
+                    "grado": "7b",
+                    "descripcion": "The drilled roof at the start is reached from someone else's shoulders"
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 5,
+                "cubierto": false,
+                "filtra": false,
+                "afluencia": 1
+            }
+        }
+    },
+    {
+        "nom": "Ermita de Betlem",
+        "descripcio": "Impresionante ubicación, aunque difícil de leer",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 6,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/betlem_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.73062,
+            "long": 3.31122,
+            "city": "betlem",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.732490, 
+            "long": 3.317817,
+            "city": "betlem",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 3,
+            "acceso_parking": "Continua el camino bajando la montaña. Haz un pequeño zig-zag y llegarás",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Dimoni cucarell",
+                    "grado": "6b+",
+                    "descripcion": "Good but deceptively difficult climbing"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Tato",
+                    "grado": "7a+",
+                    "descripcion": "Pressing moves up the gradually-steepening lower wall to the mid-height crux"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Punk rocker",
+                    "grado": "7c+",
+                    "descripcion": "Connect the two trunk tufas"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Extremadura",
+                    "grado": "7a+",
+                    "descripcion": "A steep wall above a niche"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Zipi",
+                    "grado": "6b",
+                    "descripcion": "Climb grey rock to a roof. This looks to be more like 8a!"
+                },
+                {
+                    "id": 6,
+                    "nombre": "Zape",
+                    "grado": "6b",
+                    "descripcion": "A wall leads to a big diagonal roof. As with the previous line, it looks to be more like 8a"
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 10,
+                "cubierto": false,
+                "filtra": true,
+                "afluencia": 0
+            }
+        }
     }
 ]
