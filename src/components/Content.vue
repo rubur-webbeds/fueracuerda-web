@@ -32,6 +32,7 @@
       </v-menu>
     </v-row>
     <SectoresList :sectores="sectoresFiltrados" />
+    <AddThis publicId="ra-60b2b60f65622171" />
 
     <v-dialog v-model="showAddSectorForm" persistent max-width="500px">
       <v-card>
@@ -77,11 +78,13 @@
 import JsonSectores from "../assets/data/sectores.json";
 import SectoresList from "./SectoresList";
 import SearchBar from "./SearchBar";
+import AddThis from 'vue-simple-addthis-share'
 export default {
   name: "Content",
   components: {
     SectoresList,
     SearchBar,
+    AddThis,
   },
   data: () => ({
     showAddSectorForm: false,
