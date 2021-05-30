@@ -209,14 +209,6 @@ export default {
     geolocPosition: undefined,
     calas: [],
     calas_cercanas: new Array(3),
-    jsonld: {
-      "@context": "https://schema.org",
-      "@type": "FueracuerdaSector",
-      "itemListElement": {
-        "@type": "ListItem",
-        "name": "sector",
-      }
-    },
   }),
   created() {
     var id = this.$route.params.id;
