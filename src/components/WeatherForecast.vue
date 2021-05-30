@@ -11,6 +11,7 @@
             width="100px"
             class="pa-2"
           ></v-img>
+          <v-card-text>{{ item.main.temp}} ºC</v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -20,14 +21,16 @@
 <script>
 export default {
   name: "WeeatherForecast",
+  props: [
+    "lat",
+    "lon",
+  ],
   data: () => ({
     API_key: "1f866734240bf6cd10a04b4177eb2982",
-    lat: 39.6924,
-    lon: 2.6314,
     weather: [],
   }),
   created() {
-    var url = ` http://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${this.API_key}`;
+    var url = ` http://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&units=metric&appid=${this.API_key}`;
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
@@ -39,7 +42,7 @@ export default {
       var result = [];
       var numbers = [0, 7, 15, 23, 31, 39];
       numbers.forEach((i) => {
-        result.push({date: list[i].dt_txt, weather: list[i].weather[0]});
+        result.push({date: list[i].dt_txt, weather: list[i].weather[0], main: list[i].main,});
       });
       this.weather = result;
     },
