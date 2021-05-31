@@ -103,6 +103,23 @@
         </div>
       </div>
     </v-row>
+    <v-row id="calas" justify="center" class="mt-10">
+      <v-col
+        md="2"
+        v-for="cala in this.calas_cercanas"
+        :key="cala.identificador"
+      >
+        <!-- usamos sectorCard como generico y le pasamos la cala -->
+        <SectorCard
+          :urlExterna="true"
+          :url="`https://calasdemallorca.netlify.app/cala.html?${
+            cala.identificador - 1
+          }`"
+          :nombre="cala.nom"
+          :foto_src="cala.imatges[0]"
+        />
+      </v-col>
+    </v-row>
     <v-row id="misc" justify="space-around">
       <div class="my-5">
         <WeatherForecast
@@ -170,23 +187,7 @@
         <v-icon v-else large color="black darken-2"> mdi-account-group </v-icon>
       </div>
     </v-row>
-    <v-row id="calas" justify="center">
-      <v-col
-        md="2"
-        v-for="cala in this.calas_cercanas"
-        :key="cala.identificador"
-      >
-        <!-- usamos sectorCard como generico y le pasamos la cala -->
-        <SectorCard
-          :urlExterna="true"
-          :url="`https://calasdemallorca.netlify.app/cala.html?${
-            cala.identificador - 1
-          }`"
-          :nombre="cala.nom"
-          :foto_src="cala.imatges[0]"
-        />
-      </v-col>
-    </v-row>
+    
     <v-row id="comentarios" justify="space-around">
       <!-- componente comentarios -->
       <Comentarios 
