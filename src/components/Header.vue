@@ -1,13 +1,15 @@
 <template>
   <div>
     <div id="toolbar">
-      <v-toolbar dark>
-        <v-toolbar-title
-          ><router-link class="py-2 white--text text-center text-decoration:none" to="/"
+      <v-toolbar color="blue" dark>
+        <v-toolbar-title>
+          <router-link
+            class="py-2 white--text text-center text-decoration:none"
+            to="/"
             >Fueracuerda</router-link
-          ></v-toolbar-title
-        >
-        <v-spacer></v-spacer>
+          >
+        </v-toolbar-title>
+        <img src="../assets/icono.svg" class="svg" />
       </v-toolbar>
     </div>
     <div id="carousel">
@@ -34,4 +36,9 @@ export default {
 };
 </script>
 
-
+<style scoped>
+.svg {
+  width: 80px;
+  height: 80px;
+}
+</style>
