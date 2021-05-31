@@ -2,9 +2,14 @@
   <div>
     <div id="toolbar">
       <v-toolbar color="blue" dark>
-        <v-toolbar-title>Fueracuerda</v-toolbar-title>
+        <v-toolbar-title>
+          <router-link
+            class="py-2 white--text text-center text-decoration:none"
+            to="/"
+            >Fueracuerda</router-link
+          >
+        </v-toolbar-title>
         <img src="../assets/icono.svg" class="svg" />
-        <v-spacer></v-spacer>
       </v-toolbar>
     </div>
     <div id="carousel">
