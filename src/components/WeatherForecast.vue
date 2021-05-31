@@ -6,7 +6,7 @@
           <v-card-text>{{ item.date.substring(5, 10) }}</v-card-text>
           <v-img
             contain
-            :src="`http://openweathermap.org/img/wn/${item.weather.icon}@2x.png`"
+            :src="`https://openweathermap.org/img/wn/${item.weather.icon}@2x.png`"
             height="100px"
             width="100px"
             class="pa-2"
@@ -27,7 +27,7 @@ export default {
     weather: [],
   }),
   created() {
-    var url = ` http://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${this.API_key}`;
+    var url = ` https://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${this.API_key}`;
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
