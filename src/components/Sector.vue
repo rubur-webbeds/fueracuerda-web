@@ -295,15 +295,17 @@ export default {
       return this.calas_cercanas;
     },
   },
-  // jsonld: {
-  //     "@context": "http://schema.org/",
-  //     "@type": "Mountain",
-  //     "name": this.sector.nom,
-  //     "description": this.sector.descripcio,
-  //     "photo": this.sector.imatges[0],
-  //     "latitude": this.sector.geoposicionament1.lat,
-  //     "longitude": this.sector.geoposicionament1.lon
-  //   },
+  jsonld() {
+    return {
+      "@context": "http://schema.org/",
+      "@type": "Mountain",
+      "name": this.sector.nom,
+      "description": this.sector.descripcio,
+      "photo": this.sector.imatges[0],
+      "latitude": this.sector.geoposicionament1.lat,
+      "longitude": this.sector.geoposicionament1.lon
+    }
+  },
 };
 </script>
 
