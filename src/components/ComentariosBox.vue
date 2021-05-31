@@ -48,6 +48,7 @@
 </template>
 <script>
 export default {
+  name: "ComentariosBox",
   props: ["id"],
   data: () => ({
     valid: true,
@@ -64,13 +65,23 @@ export default {
     ],
     // array para guardar comentarios en local
     comentarios: [],
-    newComentario: {
-      idSector: this.id,
-      nombre: "",
-      comentario: "",
-      valoracion: 0,
-    },
+    // newComentario: {
+    //   idSector: this.id,
+    //   nombre: "",
+    //   comentario: "",
+    //   valoracion: 0,
+    // },
   }),
+  computed: {
+    newComentario() {
+      return {
+        idSector: this.id,
+        nombre: "",
+        comentario: "",
+        valoracion: 0,
+      };
+    },
+  },
   mounted() {
     if (localStorage.getItem("comentarios")) {
       try {
@@ -85,25 +96,25 @@ export default {
       if (this.$refs.form.validate()) {
         this.addComentario();
       }
-      this.$refs.form.reset()
+      this.$refs.form.reset();
     },
     addComentario() {
       this.comentarios.push(this.newComentario);
       this.newComentario = {
         idSector: this.id,
-        nombre: '',
-        comentario: '',
+        nombre: "",
+        comentario: "",
         valoracion: 0,
       };
-      this.saveComentarios()
+      this.saveComentarios();
     },
-    removeComentario(x){
+    removeComentario(x) {
       this.comentarios.splice(x, 1);
       this.saveComentarios();
     },
     saveComentarios() {
       const parsed = JSON.stringify(this.comentarios);
-      localStorage.setItem('comentarios', parsed);
+      localStorage.setItem("comentarios", parsed);
     },
   },
 };

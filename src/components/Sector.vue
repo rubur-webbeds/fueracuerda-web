@@ -86,7 +86,7 @@
                   <vl-style-text
                     :text="cala_cercana.nom"
                     font="bold 20px arial"
-                    offsetY="-15"
+                    :offsetY="parseInt('-15')"
                   ></vl-style-text>
                 </vl-style-box>
               </vl-feature>

@@ -6,12 +6,12 @@
     <v-col cols="12" md="12">
       <v-divider></v-divider>
     </v-col>
-    <v-col>
-      <ComentariosList :id="this.id" />
-      <v-divider></v-divider>
+     <v-col>
+      <ComentariosBox :id="this.id" />
     </v-col>
     <v-col>
-      <ComentariosBox :id="this.id" />
+      <v-divider></v-divider>
+      <ComentariosList :id="this.id" />
     </v-col>
   </v-container>
 </template>
