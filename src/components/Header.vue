@@ -1,21 +1,13 @@
 <template>
   <div>
     <div id="toolbar">
-      <v-toolbar
-        dark
-        
-      >
-        <v-toolbar-title>Fueracuerda</v-toolbar-title>
+      <v-toolbar dark>
+        <v-toolbar-title
+          ><router-link class="py-2 white--text text-center text-decoration:none" to="/"
+            >Fueracuerda</router-link
+          ></v-toolbar-title
+        >
         <v-spacer></v-spacer>
-        <div id="links">
-          <router-link class="py-2 white--text text-center" to="/"
-            >Home</router-link
-          >
-          <v-spacer />
-          <router-link class="py-2 white--text text-center" to="/calas"
-            >Calas</router-link
-          >
-        </div>
       </v-toolbar>
     </div>
     <div id="carousel">
@@ -41,3 +33,5 @@ export default {
   }),
 };
 </script>
+
+
