@@ -83,7 +83,11 @@
                     <vl-style-fill color="green"></vl-style-fill>
                     <vl-style-stroke color="black"></vl-style-stroke>
                   </vl-style-circle>
-                  <vl-style-text :text="cala_cercana.nom" font="bold 20px arial" offsetY=-15></vl-style-text>
+                  <vl-style-text
+                    :text="cala_cercana.nom"
+                    font="bold 20px arial"
+                    offsetY="-15"
+                  ></vl-style-text>
                 </vl-style-box>
               </vl-feature>
             </vl-layer-vector>
@@ -113,14 +117,14 @@
           mdi-numeric-0-circle-outline
         </v-icon>
         <v-icon
-          v-else-if="this.sector.grado_medio === 1"
+          v-else-if="this.sector.dadesPropies.grado_medio === 1"
           large
           color="black darken-2"
         >
           mdi-numeric-1-circle-outline
         </v-icon>
         <v-icon
-          v-else-if="this.sector.grado_medio === 2"
+          v-else-if="this.sector.dadesPropies.grado_medio === 2"
           large
           color="black darken-2"
         >
@@ -167,11 +171,17 @@
       </div>
     </v-row>
     <v-row id="calas" justify="center">
-      <v-col md="2" v-for="cala in this.calas_cercanas" :key="cala.identificador">
-          <!-- usamos sectorCard como generico y le pasamos la cala -->
+      <v-col
+        md="2"
+        v-for="cala in this.calas_cercanas"
+        :key="cala.identificador"
+      >
+        <!-- usamos sectorCard como generico y le pasamos la cala -->
         <SectorCard
           :urlExterna="true"
-          :url="`https://calasdemallorca.netlify.app/cala.html?${cala.identificador - 1}`"
+          :url="`https://calasdemallorca.netlify.app/cala.html?${
+            cala.identificador - 1
+          }`"
           :nombre="cala.nom"
           :foto_src="cala.imatges[0]"
         />
