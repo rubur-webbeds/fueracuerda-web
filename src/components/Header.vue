@@ -1,11 +1,9 @@
 <template>
   <div>
     <div id="toolbar">
-      <v-toolbar
-        dark
-        
-      >
+      <v-toolbar color="blue" dark>
         <v-toolbar-title>Fueracuerda</v-toolbar-title>
+        <img src="../assets/icono.svg" class="svg" />
         <v-spacer></v-spacer>
         <div id="links">
           <router-link class="py-2 white--text text-center" to="/"
@@ -41,3 +39,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.svg {
+  width: 80px;
+  height: 80px;
+}
+</style>
