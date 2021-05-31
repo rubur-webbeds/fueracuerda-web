@@ -65,12 +65,6 @@ export default {
     ],
     // array para guardar comentarios en local
     comentarios: [],
-    // newComentario: {
-    //   idSector: this.id,
-    //   nombre: "",
-    //   comentario: "",
-    //   valoracion: 0,
-    // },
   }),
   computed: {
     newComentario() {

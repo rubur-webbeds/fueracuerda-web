@@ -6,13 +6,13 @@
     <v-col cols="12" md="12">
       <v-divider></v-divider>
     </v-col>
-     <v-col>
+    <v-col>
       <ComentariosBox :id="this.id" />
     </v-col>
     <v-col>
       <v-divider></v-divider>
-      <ComentariosList :id="this.id" />
     </v-col>
+    <ComentariosList :comentarios="this.comentarios" />
   </v-container>
 </template>
 
@@ -26,6 +26,18 @@ export default {
     ComentariosList,
     ComentariosBox,
   },
-  data: () => ({}),
+  data: () => ({
+    comentarios: [],
+  }),
+  mounted() {
+    if (localStorage.getItem("comentarios")) {
+      try {
+        var com = JSON.parse(localStorage.getItem("comentarios"));
+        this.comentarios = com.filter(x => x.idSector == this.id);
+      } catch (e) {
+        localStorage.removeItem("comentarios");
+      }
+    }
+  },
 };
 </script>
