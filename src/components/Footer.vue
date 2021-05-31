@@ -18,11 +18,12 @@
 export default {
   name: "Footer",
   data: () => ({
+    name: "vue-jsonld"
   }),
   jsonld: {
       "@context": "http://schema.org/",
       "@type": "Code",
-      "name": "vue-jsonld",
+      "name": this.name,
       "description": "Declarative JSON-LD Structured Data for Vue App",
       "discussionUrl": "https://github.com/ariesjia/vue-jsonld"
     },
