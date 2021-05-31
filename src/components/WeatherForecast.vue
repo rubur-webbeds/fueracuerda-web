@@ -30,7 +30,7 @@ export default {
     weather: [],
   }),
   created() {
-    var url = ` https://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&units=metric&appid=${this.API_key}`;
+    var url = `https://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&units=metric&appid=${this.API_key}`;
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
