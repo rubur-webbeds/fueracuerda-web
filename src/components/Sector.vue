@@ -189,7 +189,9 @@
     </v-row>
     <v-row id="comentarios" justify="space-around">
       <!-- componente comentarios -->
-      <Comentarios />
+      <Comentarios 
+        :id="this.$route.params.id"
+      />
     </v-row>
   </v-container>
 </template>
