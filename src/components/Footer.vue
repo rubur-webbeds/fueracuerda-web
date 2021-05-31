@@ -23,7 +23,7 @@ export default {
   jsonld: {
       "@context": "http://schema.org/",
       "@type": "Code",
-      "name": this.name,
+      "name": "vueee",
       "description": "Declarative JSON-LD Structured Data for Vue App",
       "discussionUrl": "https://github.com/ariesjia/vue-jsonld"
     },
