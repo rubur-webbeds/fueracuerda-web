@@ -5,15 +5,6 @@
         <v-toolbar-title>Fueracuerda</v-toolbar-title>
         <img src="../assets/icono.svg" class="svg" />
         <v-spacer></v-spacer>
-        <div id="links">
-          <router-link class="py-2 white--text text-center" to="/"
-            >Home</router-link
-          >
-          <v-spacer />
-          <router-link class="py-2 white--text text-center" to="/calas"
-            >Calas</router-link
-          >
-        </div>
       </v-toolbar>
     </div>
     <div id="carousel">

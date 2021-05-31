@@ -18,13 +18,28 @@
 export default {
   name: "Footer",
   data: () => ({
+    name: "vue-jsonld",
+    names: ["a", "b"]
   }),
-  jsonld: {
-      "@context": "http://schema.org/",
-      "@type": "Code",
-      "name": "vue-jsonld",
-      "description": "Declarative JSON-LD Structured Data for Vue App",
-      "discussionUrl": "https://github.com/ariesjia/vue-jsonld"
-    },
-};
+  // jsonld() {
+  //   this.names.map((x) => {
+  //     return {
+  //     "@context": "http://schema.org/",
+  //     "@type": "Code",
+  //     "name": x,
+  //     "description": "Declarative JSON-LD Structured Data for Vue App",
+  //     "discussionUrl": "https://github.com/ariesjia/vue-jsonld",
+  //   };
+     
+  //   })
+  // },
+  // jsonld(){
+  //   return{
+  //     "@context": "http://schema.org/",
+  //     "@type": "Mountain",
+  //     "name": this.name,
+  //     "description": "Declarative JSON-LD Structured Data for Vue App",
+  //   }
+  // }
+}
 </script>

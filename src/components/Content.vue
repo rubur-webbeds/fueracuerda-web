@@ -217,5 +217,15 @@ export default {
       this.sectores = [...this.JsonSectores, ...this.localStorageSectores];
     }
   },
+  jsonld() {
+    return {
+      "@context": "http://schema.org/",
+      "@type": "Mountain",
+       "name": this.sectoresFiltrados,
+      // "description": this.sectores[0].descripcio,
+      // "latitude": this.sectores[0].geoposicionament1.lat,
+      // "longitude": this.sectores[0].geoposicionament1.long
+    }
+  },
 };
 </script>
