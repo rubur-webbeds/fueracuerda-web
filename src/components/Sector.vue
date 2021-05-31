@@ -15,6 +15,8 @@
         :items="this.vias"
         class="my-10 elevation-1"
       ></v-data-table>
+    </v-row>
+    <v-row id="mapa" justify="space-around">
       <div class="map border my-5">
         <!--MAPA SECTOR-->
         <div>
@@ -81,6 +83,11 @@
                     <vl-style-fill color="green"></vl-style-fill>
                     <vl-style-stroke color="black"></vl-style-stroke>
                   </vl-style-circle>
+                  <vl-style-text
+                    :text="cala_cercana.nom"
+                    font="bold 20px arial"
+                    offsetY="-15"
+                  ></vl-style-text>
                 </vl-style-box>
               </vl-feature>
             </vl-layer-vector>
@@ -96,17 +103,11 @@
         </div>
       </div>
     </v-row>
-    <v-row id="info_cala" justify="center">
-      <v-data-table
-        :headers="this.headers_calas"
-        :items="calas_cercanas"
-        class="my-10 elevation-1"
-      ></v-data-table>
-    </v-row>
     <v-row id="misc" justify="space-around">
       <div class="my-5">
-        <v-img
-          :src="`http://www.7timer.info/bin/civillight.php?lon=${this.sector.geoposicionament1.long}&lat=${this.sector.geoposicionament1.lat}&ac=0&lang=en&unit=metric&output=internal&tzshift=0`"
+        <WeatherForecast
+          :lat="this.sector.geoposicionament1.long"
+          :lon="this.sector.geoposicionament1.lat"
         />
         <v-icon
           v-if="this.sector.dadesPropies.grado_medio === 0"
@@ -116,14 +117,14 @@
           mdi-numeric-0-circle-outline
         </v-icon>
         <v-icon
-          v-else-if="this.sector.grado_medio === 1"
+          v-else-if="this.sector.dadesPropies.grado_medio === 1"
           large
           color="black darken-2"
         >
           mdi-numeric-1-circle-outline
         </v-icon>
         <v-icon
-          v-else-if="this.sector.grado_medio === 2"
+          v-else-if="this.sector.dadesPropies.grado_medio === 2"
           large
           color="black darken-2"
         >
@@ -169,6 +170,23 @@
         <v-icon v-else large color="black darken-2"> mdi-account-group </v-icon>
       </div>
     </v-row>
+    <v-row id="calas" justify="center">
+      <v-col
+        md="2"
+        v-for="cala in this.calas_cercanas"
+        :key="cala.identificador"
+      >
+        <!-- usamos sectorCard como generico y le pasamos la cala -->
+        <SectorCard
+          :urlExterna="true"
+          :url="`https://calasdemallorca.netlify.app/cala.html?${
+            cala.identificador - 1
+          }`"
+          :nombre="cala.nom"
+          :foto_src="cala.imatges[0]"
+        />
+      </v-col>
+    </v-row>
     <v-row id="comentarios" justify="space-around">
       <!-- componente comentarios -->
       <Comentarios />
@@ -179,17 +197,20 @@
 <script>
 import sectores from "../assets/data/sectores.json";
 import Comentarios from "./Comentarios";
+import WeatherForecast from "./WeatherForecast";
+import SectorCard from "./SectorCard";
 
 export default {
   name: "Sector",
   components: {
     Comentarios,
+    WeatherForecast,
+    SectorCard,
   },
   data: () => ({
     sector: null,
     vias: [],
     headers_vias: [],
-    headers_calas: [],
     zoom: 12,
     center: [0, 0],
     center_sector: [0, 0],
@@ -251,7 +272,6 @@ export default {
               2
             )
         );
-
         // recorremos el array de calas guardadas para sustituir por la cala de esta iteración si es más cercana que alguna de las guardadas.
         for (j = 0; j < this.calas_cercanas.length; j++) {
           distancia_cala_dentro = Math.sqrt(
@@ -266,46 +286,12 @@ export default {
                 2
               )
           );
-
           if (distancia_cala_dentro > distancia_cala_fuera) {
             this.calas_cercanas[j] = this.calas[i];
             break;
           }
         }
       }
-
-      //características de la cala que deseamos obtener
-      var header_index = [
-        "nom",
-        "puntuacio",
-        "tipusCala",
-        "tipusAcces",
-        "accesMinusvalids",
-        "nudista",
-        "hamacas",
-        "parking",
-        "animals",
-        "dutxes",
-        "lavabos",
-        "alquilerEmbarcacions",
-        "socorrista",
-        "bar",
-      ];
-
-      Object.keys(this.calas_cercanas[0]).forEach((el) => {
-        var header = { text: el, value: el };
-        //seleccionamos los apartados de "cala" que deseamos mostrar fijándonos en su estructura json.
-        if (header_index.includes(header.text)) this.headers_calas.push(header);
-      });
-
-      //caraxcterísticas dentro de dadesPropries en serveis
-      // Object.keys(this.calas_cercanas[0].dadesPropies.serveis).forEach((el) => {
-      //   var header = { text: el, value: el};
-      //   //seleccionamos los apartados de "cala" que deseamos mostrar fijándonos en su estructura json.
-      //   if(header_index.includes(el))
-      //   this.headers_calas.push(header);
-      // });
-
       return this.calas_cercanas;
     },
   },
