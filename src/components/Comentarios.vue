@@ -7,12 +7,12 @@
       <v-divider></v-divider>
     </v-col>
     <v-col>
-      <ComentariosBox :id="this.id" />
+      <ComentariosBox @savecomentario="saveComentario" :id="this.id" />
     </v-col>
     <v-col>
       <v-divider></v-divider>
     </v-col>
-    <ComentariosList :comentarios="this.comentarios" />
+    <ComentariosList :comentarios="this.comentariosFiltrados" />
   </v-container>
 </template>
 
@@ -29,11 +29,26 @@ export default {
   data: () => ({
     comentarios: [],
   }),
+  computed:{
+    comentariosFiltrados(){
+      return this.comentarios.filter(x => x.idSector == this.id);
+    }
+  },
+  methods:{
+    saveComentario(comentario){
+      var com = Object.assign({}, comentario);
+      this.comentarios.push(com);
+      this.saveComentarios();
+    },
+    saveComentarios() {
+      const parsed = JSON.stringify(this.comentarios);
+      localStorage.setItem("comentarios", parsed);
+    },
+  },
   mounted() {
     if (localStorage.getItem("comentarios")) {
       try {
-        var com = JSON.parse(localStorage.getItem("comentarios"));
-        this.comentarios = com.filter(x => x.idSector == this.id);
+        this.comentarios = JSON.parse(localStorage.getItem("comentarios"));
       } catch (e) {
         localStorage.removeItem("comentarios");
       }
