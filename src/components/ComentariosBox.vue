@@ -76,15 +76,6 @@ export default {
       };
     },
   },
-  mounted() {
-    if (localStorage.getItem("comentarios")) {
-      try {
-        this.comentarios = JSON.parse(localStorage.getItem("comentarios"));
-      } catch (e) {
-        localStorage.removeItem("comentarios");
-      }
-    }
-  },
   methods: {
     validate() {
       if (this.$refs.form.validate()) {
@@ -93,22 +84,13 @@ export default {
       this.$refs.form.reset();
     },
     addComentario() {
-      this.comentarios.push(this.newComentario);
+      this.$emit('savecomentario', this.newComentario);
       this.newComentario = {
         idSector: this.id,
         nombre: "",
         comentario: "",
         valoracion: 0,
       };
-      this.saveComentarios();
-    },
-    removeComentario(x) {
-      this.comentarios.splice(x, 1);
-      this.saveComentarios();
-    },
-    saveComentarios() {
-      const parsed = JSON.stringify(this.comentarios);
-      localStorage.setItem("comentarios", parsed);
     },
   },
 };
