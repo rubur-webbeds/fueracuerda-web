@@ -1,26 +1,37 @@
 <template>
   <div>
     <div id="toolbar">
-      <v-toolbar color="blue" dark>
+      <v-toolbar dark>
         <v-toolbar-title>
           <router-link
-            class="py-2 white--text text-center text-decoration:none"
             to="/"
-            >Fueracuerda</router-link
+            >
+            <img src="../assets/header_logo.svg" class="svg mt-3"/>
+            </router-link
           >
         </v-toolbar-title>
-        <img src="../assets/icono.svg" class="svg" />
       </v-toolbar>
     </div>
     <div id="carousel">
-      <v-carousel v-model="model">
-        <v-carousel-item
-          v-for="(foto, i) in fotos_header"
-          :key="i"
-          :src="foto.src"
-        >
-        </v-carousel-item>
-      </v-carousel>
+      <vue-video-section
+        :elementId="'header-background-video'"
+        :ref="'header-background-video'"
+        :mp4Source="require('../assets/video/Mallorca_escalacion.mp4')"
+        :mobileBreakpoint="992"
+        :desktopHeight="550"
+        :mobileHeight="450"
+        :playsinline="true"
+        :loop="true"
+        :autoplay="true"
+        :autobuffer="true"
+        :muted="true"
+      >
+        <div slot="overlay-content" class="overlay-content">
+          <v-img
+            src="../assets/logo_transparente.svg"
+          />
+        </div>
+      </vue-video-section>
     </div>
   </div>
 </template>
@@ -38,7 +49,7 @@ export default {
 
 <style scoped>
 .svg {
-  width: 80px;
-  height: 80px;
+  width: 226px;
+  height: 70px;
 }
 </style>
