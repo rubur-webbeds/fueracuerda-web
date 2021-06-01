@@ -1,11 +1,6 @@
 <template>
   <v-container>
-    <div v-for="(comentario, i) in comentarios" :key="i">
-      <!-- <v-textarea
-        outlined
-        :label="comentario.nombre"
-        :value="comentario.comentario"
-      ></v-textarea> -->
+    <div v-for="comentario in comentarios" :key="comentario.nombre">
       <v-row>
         <v-col cols="12" md="1">
           <h3>{{ comentario.nombre }}</h3>
