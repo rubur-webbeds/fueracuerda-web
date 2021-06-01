@@ -104,6 +104,7 @@ export default {
     JsonSectores,
     sectores: [],
     filter: "",
+    jsonld: [],
   }),
   computed: {
     sectoresFiltrados() {
@@ -216,16 +217,22 @@ export default {
     if (this.JsonSectores && this.localStorageSectores) {
       this.sectores = [...this.JsonSectores, ...this.localStorageSectores];
     }
+
+    // crear objeto jsonld
+    this.sectoresFiltrados.forEach(x => {
+      var obj = {
+        "@context": "http://schema.org/",
+        "@type": "Mountain",
+        "name": x.nom,
+        "description": x.descripcio,
+        "latitude": x.geoposicionament1.lat,
+        "longitude": x.geoposicionament1.long
+      }
+      this.jsonld.push(obj);
+    });
   },
   jsonld() {
-    return {
-      "@context": "http://schema.org/",
-      "@type": "Mountain",
-       "name": this.sectoresFiltrados,
-      // "description": this.sectores[0].descripcio,
-      // "latitude": this.sectores[0].geoposicionament1.lat,
-      // "longitude": this.sectores[0].geoposicionament1.long
-    }
+    return this.jsonld
   },
 };
 </script>

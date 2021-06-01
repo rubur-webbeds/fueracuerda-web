@@ -298,15 +298,5 @@ export default {
       return this.calas_cercanas;
     },
   },
-  // jsonld() {
-  //   return {
-  //     "@context": "http://schema.org/",
-  //     "@type": "Mountain",
-  //      "name": this.sector.nom,
-  //     // "description": this.sectores[0].descripcio,
-  //     // "latitude": this.sectores[0].geoposicionament1.lat,
-  //     // "longitude": this.sectores[0].geoposicionament1.long
-  //   }
-  // },
 };
 </script>
