@@ -300,3 +300,17 @@ export default {
   },
 };
 </script>
+<style scoped>
+.map {
+  justify-content: center;
+  width: 700px;
+  height: 400px;
+}
+.border {
+  border: 1px black solid;
+}
+.comments {
+  width: 100%;
+  height: 200px;
+}
+</style>
