@@ -1,0 +1,1468 @@
+[
+    {
+        "nom": "S'estret",
+        "descripcio": "S'estret es una zona de peñascos de fácil acceso, situada justo al sur del bonito pueblo de Valldemossa. Las diversas paredes ofrecen diferentes atractivos para los escaladores: una serie de paredes orientadas al oeste, situadas en un lugar agradable, con vistas al camino en el fondo del valle; una antigua cantera abandonada que tiene unos recorridos duros excepcionales; y algunas paredes desarrolladas más recientemente de llamativa piedra caliza blanca. El sector Cuarentón tiene un buen conjunto de rutas distribuidas en tres muros separados, incluidas algunas excelentes rutas de losas de más fácil grado. Por encima de estos hay algunos buenos largos en Sector Pasión. El empinado Sector Mejicano ofrece algunos campos ultraduros que bien vale la pena buscar cuando hace calor o mojado. Los cuatro nuevos sectores a la derecha de la cantera son excelentes adiciones con muchas líneas de alta calidad en los grados medios.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 0,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/s'estret_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.6924,
+            "long": 2.6314,
+            "city": "valldemossa",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.7115,
+            "long": 2.6226,
+            "city": "valldemossa",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 0,
+            "acceso_parking": "Toma la Ma-1130 desde Palma hacia Valldemossa. Si viene por el noreste, puede cortar desde la autovía por Palmañola para tomar la Ma-1130 en s'Eglieieta. Después de 4 km, pasando el poste de 14 km al costado de la carretera, diríjase a un apartadero a la izquierda, junto a un puente sobre el lecho de un río seco. Este apartadero está a 3 km antes de Valldemossa.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Con el culo al aire",
+                    "grado": "5a",
+                    "descripcion": "Sube la grieta empinada. Siga la grieta delgada en el lado derecho de la losa hasta una parte inferior."
+                },
+                {
+                    "id": 1,
+                    "nombre": "Busibus",
+                    "grado": "6c+",
+                    "descripcion": "El lado derecho de la pared roja es duro y muy bajo, pero el techo no está tan mal."
+                },
+                {
+                    "id": 2,
+                    "nombre": "Red stain",
+                    "grado": "6b+",
+                    "descripcion": "Sube la losa, luego haz algunos movimientos duros para cruzar el pequeño techo. Los tornillos no están tan juntos como cabría esperar."
+                },
+                {
+                    "id": 3,
+                    "nombre": "Movimiento sexy",
+                    "grado": "5+",
+                    "descripcion": "Buena escalada por la grieta diagonal."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 5,
+                "cubierto": true,
+                "filtra": false,
+                "afluencia": 2
+            }
+        }
+    },
+    {
+        "nom": "To pa ti",
+        "descripcio": "Un bello peñasco en el extremo occidental del Puig de Garrafa en la esquina suroeste de la isla. Los problemas de acceso recientes significan que actualmente no debe subir al Sector Solarium, que era el sector orientado al sur con rutas más fáciles. Por favor manténgase alejado. Cualquiera que suba aquí podría poner en peligro el acceso a todo el risco.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 1,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/to_pa_ti_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.55852,
+            "long": 2.42635,
+            "city": "andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.5744,
+            "long": 2.4203,
+            "city": "andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio":2,
+            "acceso_parking": "Aparca al lado de la depuradora de agua. Actualmente no debes subir al Sector Solarium, que es el sector orientado al sur con rutas más fáciles. Por favor manténgase alejado. Cualquiera que suba aquí podría poner en peligro el acceso a todo el risco.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Hacia pa ti",
+                    "grado": "7a",
+                    "descripcion": "Magnífica escalada por las empinadas grietas y bolsillos más allá de dos pequeñas cuevas."
+                },
+                {
+                    "id": 1,
+                    "nombre": "Es mirall",
+                    "grado": "8b",
+                    "descripcion": "Un proyecto de aspecto muy difícil. Hay algunas líneas más desconocidas a la izquierda."
+                },
+                {
+                    "id": 2,
+                    "nombre": "Equilibrium tremens",
+                    "grado": "?",
+                    "descripcion": "La pared fina directa al acabado Hacia pa ti."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 15,
+                "cubierto":"",
+                "filtra": "",
+                "afluencia": 2 
+            }
+        }
+    },
+    {
+        "nom": "Adalt de tot",
+        "descripcio": "El área conocida como Les Perxes en realidad se refiere a tres riscos muy diferentes esparcidos a lo largo de un estrecho valle al norte de la ciudad de Caimari. Sector Cueva es una cueva súper empinada y una pared abultada con un conjunto desesperado de rutas difíciles. The Hairpin Wall consta de un alto contrafuerte con unos buenos recorridos más fáciles que aprovechan la calidad de la roca en su sección inferior. El área final es el Muro de Caimari, que es una pared fina y compacta de roca vertical, envuelta por árboles. La cueva es un lugar útil cuando hace demasiado calor o demasiado húmedo para algunos de los otros lugares de la isla. El Muro de la Horquilla y Muro de Caimari están más expuestos, pero están relativamente protegidos de los fuertes vientos, y recibirán el sol de la tarde, aunque filtrado a través de los árboles en Muro de Caimari.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 2,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/caimari_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.7761,
+            "long": 2.8979,
+            "city": "caimari",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.7713,
+            "long": 2.9023,
+            "city": "caimari",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 2,
+            "acceso_parking": "El pueblo de Caimari está situado al norte de Inca, en la Ma-2130, que cruza las montañas para unirse a la carretera de la costa norte Ma-10. Desde Inca siga las señales para 'Selva' y luego 'Caimari'. Les Perxes: aparque al otro lado de Caimari y continúe por la carretera a pie. Después de 200 m, pase una señal para 'Lluc 10 km' y un poste de 7 km. Después de esto, tome la segunda pista a la izquierda, el peñasco está a la izquierda después de 200 m. También es posible usar el estacionamiento de Hairpin Wall y caminar de regreso por la carretera, si el primer lugar está lleno. No se estacione debajo del peñasco, ya que la carretera es el camino de entrada de alguien y el peñasco está en una propiedad privada; el acceso podría prohibirse fácilmente. Muro de horquilla: continúe subiendo por la carretera, pase el desvío a Les Perxes y estacione en la primera curva de horquilla. Muro de Caimari - Justo a la vuelta de la curva del muro de horquilla hay algunos pequeños tirones a derecha e izquierda. Si están ocupados, estacione en el estacionamiento de Hairpin Wall. Camine por la carretera hasta la siguiente curva y cruce una cerca usando un montante al lado de una puerta. Un pequeño camino sube y sale al peñasco. Primero dirígete hacia la pared antes de ir a la izquierda, ya que esto evitará los arbustos.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Las bolas chinas L1",
+                    "grado": "6b+",
+                    "descripcion": "Una gran alineación en la pared entre tobas."
+                },
+                {
+                    "id": 1,
+                    "nombre": "Las bolas chinas",
+                    "grado": "7a/+",
+                    "descripcion": "La ruta completa es excelente."
+                },
+                {
+                    "id": 2,
+                    "nombre": "Sweetie the poh",
+                    "grado": "7b",
+                    "descripcion": "Una fantástica alineación entre la toba central y la pared frontal."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 20,
+                "cubierto":true,
+                "filtra": false,
+                "afluencia": 2
+            }
+        }
+    },
+    {
+        "nom": "Penyal des grau",
+        "descripcio": "Uno de los mejores riscos más pequeños de la zona, que aunque no es extenso, tiene algo para mantener a la mayoría en busca de unos 6 de calidad y unos 7 de gama baja felices durante unas horas. El acantilado está ubicado en una sección boscosa remota de las montañas, pero está a solo unos segundos del estacionamiento.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 3,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/penyal_des_grau_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.64072,
+            "long": 2.53167,
+            "city": "puigpunyent",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.6272,
+            "long": 2.5283,
+            "city": "puigpunyent",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 1,
+            "acceso_parking": "Coger la carretera de Palma al pueblo de Esporles. Continuar por el pueblo hasta un desvío a la izquierda hacia Puigpunyent. Siga esta carretera estrecha durante unos 6 km y sobre el collado 'Es Grau - 468 m'. Baja y estaciona en cualquier lugar que puedas en la primera horquilla después del collado. Hay un espacio limitado en la curva con algunos lugares más posibles más abajo. El primer contrafuerte está casi directamente encima de la curva con el área principal más adelante.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Mariol.lo",
+                    "grado": "6a",
+                    "descripcion": "Un pequeño y agradable muro de piedra de flujo que aumenta gradualmente en dificultad a medida que se gana altura."
+                },
+                {
+                    "id": 1,
+                    "nombre": "Talaiot corcat",
+                    "grado": "6c",
+                    "descripcion": "Un campo desafiante que toma una roca muy empinada justo a la derecha de la toba. Realmente solo usa la toba para los pies."
+                },
+                {
+                    "id": 2,
+                    "nombre": "Intrincate",
+                    "grado": "6a",
+                    "descripcion": "Más complejo de lo que parece, especialmente cerca de la parte superior."
+                },
+                {
+                    "id": 3,
+                    "nombre": "Tall en verduc",
+                    "grado": "6c",
+                    "descripcion": "Una secuencia intensa desde la plataforma hacia un terreno más fácil pero aún interesante en la parte superior."
+                },
+                {
+                    "id": 4,
+                    "nombre": "Black block",
+                    "grado": "7a",
+                    "descripcion": "La pared larga a la izquierda de la toba."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 2,
+                "cubierto":true,
+                "filtra": false,
+                "afluencia": 0
+            }
+        }
+    },
+    {
+        "nom": "Mont Port",
+        "descripcio": "Sector cerca de Puerto de Andratx. Con vistas al mar. Dos sectores: Sector Dragonera y Sector Sombra.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 4,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/montport_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.5551,
+            "long": 2.372,
+            "city": "puerto andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.555555, 
+            "long": 2.374945,
+            "city": "puerto andratx",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 1,
+            "acceso_parking": "Estacione en el lugar del GPS / mapa, en la cima de la colina. El camino de tierra continúa; tome el camino de tierra que corre paralelo. Después de una corta distancia, siga un pequeño camino a la derecha, marcado por mojones. Aproximadamente 15 minutos de caminata un poco complicada más tarde llegará al Sector Dragonera.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Pequeño coatí",
+                    "grado": "6a+",
+                    "descripcion": "No hay descripcion."
+                },
+                {
+                    "id": 1,
+                    "nombre": "Alegría",
+                    "grado": "5c",
+                    "descripcion": "No hay descripcion"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Hematoma",
+                    "grado": "5b",
+                    "descripcion": "No hay descripcion"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Sherpa",
+                    "grado": "7a+",
+                    "descripcion": "El mismo comienzo que Mako 11. Tiene una sección de cantos rodados entre el tercer perno y la parte inferior. Muy bonita ruta."
+                },
+                {
+                    "id": 4,
+                    "nombre": "Parque de diversión",
+                    "grado": "6a+",
+                    "descripcion": "No hay descripcion"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Hielo negro",
+                    "grado": "6a",
+                    "descripcion": "2 parcelas. 6a, V +."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 20,
+                "cubierto": false,
+                "filtra": false,
+                "afluencia": 1
+            }
+        }
+    },
+    {
+        "nom": "Tijuana",
+        "descripcio": "Esta encantadora ubicación tiene un gran ambiente de vacaciones. Las rutas son menos amigables que en otros lugares cercanos, ya que un buen número tiene inicios de corte feroz que requieren toda la potencia en el momento en que se levanta del suelo. Sin embargo, una vez conquistadas las salidas, el estilo cambia a una magnífica escalada con dedos. La mayoría de las rutas se han reequipado con grapas; trate a los que no lo han hecho con extrema precaución.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 5,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/tijuana_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.32713,
+            "long": 3.15044,
+            "city": "santanyi",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.328781,
+            "long": 3.150960,
+            "city": "santanyi",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 1,
+            "acceso_parking": "Los acantilados de Tijuana se encuentran en el extremo sureste de la isla. El camino hasta esta esquina es relativamente fácil, aunque puede llevar un tiempo recorrer todos los pequeños pueblos y ciudades que se encuentran en el camino. Al entrar en el pueblo de Santanyí, siga las indicaciones hacia 'Cala Figuera' y 'Cala Santanyí' a través del pueblo. Desde las afueras de Santanyí continuar unos 2km hasta encontrar una rotonda. Siga recto, señalizado 'Cala Santanyí ll'. (No gire a la derecha, señalizado 'Cala Santanyí l'.) Aproximadamente 200 m después de la rotonda, gire a la derecha - señalizado 'Cala Santanyí', luego tome la primera a la izquierda (sin firmar) y luego la primera a la derecha (señalizada como 'HR Palmaria' ). Continuar por esta carretera hasta una rotonda con un árbol. Estacione aquí con cuidado ya que es una zona residencial, y pase una barrera en el camino hasta una torre en la cima de los acantilados. Siga el camino del borde del acantilado hacia la derecha (mirando hacia afuera) hasta que el camino descienda hasta la base del peñasco.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Left wing",
+                    "grado": "6a",
+                    "descripcion": "Una pequeña ruta buena. El comienzo difícil se negocia mejor interviniendo desde la izquierda o la derecha. Puede ser un poco grasoso hasta el segundo perno. Continúe hacia la derecha y luego tire de un bulto para terminar."
+                },
+                {
+                    "id": 2,
+                    "nombre": "Churrito y pelete",
+                    "grado": "5a",
+                    "descripcion": "Muy buena escalada comenzando un corto surco."
+                },
+                {
+                    "id": 3,
+                    "nombre": "Blame it on the rain",
+                    "grado": "7a+",
+                    "descripcion": "Comience en el extremo derecho de la repisa."
+                },
+                {
+                    "id": 4,
+                    "nombre": "Es nas",
+                    "grado": "8a",
+                    "descripcion": "Bouldery se mueve a la derecha."
+                },
+                {
+                    "id": 5,
+                    "nombre": "Cancamos",
+                    "grado": "7b",
+                    "descripcion": "El centro de la 'V' invertida. Los movimientos finales pueden evitarse con una variante a la izquierda ligeramente audaz. El primer techo no se puede empujar."
+                },
+                {
+                    "id": 6,
+                    "nombre": "Flesh for Dani",
+                    "grado": "7b",
+                    "descripcion": "El techo perforado al principio se alcanza desde los hombros de otra persona. La pared de arriba es empinada y sostenida."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 5,
+                "cubierto": false,
+                "filtra": false,
+                "afluencia": 1
+            }
+        }
+    },
+    {
+        "nom": "Ermita de Betlem",
+        "descripcio": "Impresionante ubicación, aunque difícil de leer.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 6,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/betlem_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.73062,
+            "long": 3.31122,
+            "city": "betlem",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.732490, 
+            "long": 3.317817,
+            "city": "betlem",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 3,
+            "acceso_parking": "Continua el camino bajando la montaña. Haz un pequeño zig-zag y llegarás.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Dimoni cucarell",
+                    "grado": "6b+",
+                    "descripcion": "Buena, pero engañosamente difícil, trepar por la ranura abierta que hace señas hacia un terreno más fácil por encima."
+                },
+                {
+                    "id": 2,
+                    "nombre": "Tato",
+                    "grado": "7a+",
+                    "descripcion": "Al presionar se mueve hacia arriba la pared inferior que se inclina gradualmente hasta el punto crucial de la altura media. Arriba, más fácil pero excelente, los movimientos hacia arriba, las rupturas diagonales ganan la parte superior. Algunos tornillos viejos."
+                },
+                {
+                    "id": 3,
+                    "nombre": "Punk rocker",
+                    "grado": "7c+",
+                    "descripcion": "Conecta las dos tobas tronco."
+                },
+                {
+                    "id": 4,
+                    "nombre": "Extremadura",
+                    "grado": "7a+",
+                    "descripcion": "Una pared empinada sobre un nicho."
+                },
+                {
+                    "id": 5,
+                    "nombre": "Zipi",
+                    "grado": "6b",
+                    "descripcion": "Suba la roca gris hasta un techo. ¡Esto parece ser más como 8a!"
+                },
+                {
+                    "id": 6,
+                    "nombre": "Zape",
+                    "grado": "6b",
+                    "descripcion": "Una pared conduce a un gran techo diagonal. Al igual que con la línea anterior, parece más 8a."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 10,
+                "cubierto": false,
+                "filtra": true,
+                "afluencia": 0
+            }
+        }
+    },
+    {
+        "nom": "Ca's Català",
+        "descripcio": "Escalada deportiva, vías de un solo largo, desnivel bajo. Zona cálida. Se seca rápidamente.",
+        "detall": "escalada",
+        "tipus": "deportes",
+        "identificador": 7,
+        "preu": {
+            "import": "",
+            "coment-preu": ""
+        },
+        "contacte": {
+            "telf": "",
+            "email": "",
+            "xarxes": {
+                "web": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        "puntuacio": 0,
+        "visualitzacions": "",
+        "likes": 0,
+        "icones": [
+            ""
+        ],
+        "imatges": [
+            {
+                "src": "media/img/sectores/cas_catala_1.png"
+            }
+        ],
+        "videos": [
+            {
+                "tipus": "",
+                "url": ""
+            },
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "audio": [
+            {
+                "tipus": "",
+                "url": ""
+            }
+        ],
+        "geoposicionament1": {
+            "address": "",
+            "lat": 39.551107,
+            "long": 2.587094,
+            "city": "cas català",
+            "Country": "spain",
+            "zip": ""
+        },
+        "geoposicionament2": {
+            "address": "",
+            "lat": 39.549400, 
+            "long": 2.588700,
+            "city": "cas català",
+            "Country": "spain",
+            "zip": ""
+        },
+        "horari": {
+            "di": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dm": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dx": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dj": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dv": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "ds": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ],
+            "dg": [
+                {
+                    "in": "-",
+                    "out": "-"
+                },
+                {
+                    "in": "-",
+                    "out": "-"
+                }
+            ]
+        },
+        "calendari": {
+            "startDataEvent": "",
+            "startTimeEvent": "",
+            "endDataEvent": "",
+            "endTimeEvent": ""
+        },
+        "dadesPropies": {
+            "grado_medio": 1,
+            "acceso_parking": "Aparcar al final del 'Carrer del Barranc' (Calvià). Suba las escaleras, luego tome un camino a la izquierda, camine durante 5 minutos. La pared estará debajo de ti.",
+            "vias": [
+                {
+                    "id": 0,
+                    "nombre": "Morris",
+                    "grado": "6a+",
+                    "descripcion": "Se dice que es la ruta más larga del peñasco."
+                },
+                {
+                    "id": 2,
+                    "nombre": "Ebam 1",
+                    "grado": "4c",
+                    "descripcion": "Una ruta larga que sigue el surco abierto con tendencia a la derecha y la esquina hacia abajo y hacia la izquierda a lo largo del peñasco."
+                },
+                {
+                    "id": 3,
+                    "nombre": "Covas Bros",
+                    "grado": "5b",
+                    "descripcion": "Smart trepando por la losa de roca gris a la izquierda de una sección naranja de la pared."
+                },
+                {
+                    "id": 4,
+                    "nombre": "Tofol Boxer",
+                    "grado": "6a",
+                    "descripcion": "Una pequeña pared agradable en bolsillos y bordes."
+                },
+                {
+                    "id": 5,
+                    "nombre": "Pollo amarillo",
+                    "grado": "6c+",
+                    "descripcion": "La pared inferior con bolsillos de color naranja a protuberancias superiores más pronunciadas."
+                },
+                {
+                    "id": 6,
+                    "nombre": "Cris tocino",
+                    "grado": "4c",
+                    "descripcion": "Sube la nervadura a la izquierda de la chimenea / esquina profunda."
+                }
+            ],
+            "miscelanea": {
+                "tiempo_caminando": 7,
+                "cubierto": false,
+                "filtra": true,
+                "afluencia": 0
+            }
+        }
+    }
+]
